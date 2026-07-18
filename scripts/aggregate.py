@@ -47,15 +47,13 @@ def company_status(prospect, send, replied) -> str:
             return "failed"
         if s == "sent":
             return "sent"
-        if s == "skipped":
-            return "skipped"
-    if prospect["status_class"] == "route_only":
-        return "skipped"
     return "pending"
 
 
 def main() -> None:
-    prospects = load_json(config.PROSPECTS_JSON, [])
+    all_prospects = load_json(config.PROSPECTS_JSON, [])
+    # A prospect is only a prospect if we have an email to reach them.
+    prospects = [p for p in all_prospects if p.get("status_class") == "has_email"]
     sends = load_json(config.SENDS_JSON, {})
     status = load_json(config.STATUS_JSON, {})
 
@@ -75,10 +73,6 @@ def main() -> None:
 
         kpi[cstatus] += 1
         kpi["total"] += 1
-        if p["status_class"] == "has_email":
-            kpi["emailable"] += 1
-        else:
-            kpi["route_only"] += 1
 
         cat = p.get("category") or "Uncategorized"
         like = p.get("likelihood") or "Unknown"
@@ -133,7 +127,6 @@ def main() -> None:
                 "total": c["total"],
                 "sent": c.get("sent", 0),
                 "replied": c.get("replied", 0),
-                "skipped": c.get("skipped", 0),
                 "pending": c.get("pending", 0),
                 "failed": c.get("failed", 0),
             })
@@ -150,11 +143,8 @@ def main() -> None:
         "event": config.EVENT,
         "kpis": {
             "total": kpi.get("total", 0),
-            "emailable": kpi.get("emailable", 0),
-            "route_only": kpi.get("route_only", 0),
             "sent": sent,
             "replied": replied,
-            "skipped": kpi.get("skipped", 0),
             "failed": kpi.get("failed", 0),
             "pending": kpi.get("pending", 0),
             "reply_rate": reply_rate,
@@ -168,7 +158,6 @@ def main() -> None:
         "timeline": timeline,
         "funnel": {
             "prospects": kpi.get("total", 0),
-            "emailable": kpi.get("emailable", 0),
             "sent": sent,
             "replied": replied,
         },
@@ -178,7 +167,7 @@ def main() -> None:
     save_json(config.STATS_JSON, stats)
     print(f"Wrote stats -> {config.STATS_JSON}")
     print(f"  total={stats['kpis']['total']} sent={sent} replied={replied} "
-          f"skipped={stats['kpis']['skipped']} pending={stats['kpis']['pending']}")
+          f"pending={stats['kpis']['pending']}")
 
 
 if __name__ == "__main__":

@@ -101,7 +101,6 @@ function renderKpis(k) {
     kpiCard(k.replied, "Replies"),
     kpiCard(`${k.reply_rate}%`, "Reply rate"),
     kpiCard(k.pending, "Pending"),
-    kpiCard(k.route_only, "Route-only (no email)"),
   ].join("");
 }
 
@@ -109,12 +108,11 @@ function renderFunnel(f) {
   if (!f) return;
   const steps = [
     { label: "Prospects", value: f.prospects },
-    { label: "Emailable", value: f.emailable },
     { label: "Sent", value: f.sent },
     { label: "Replied", value: f.replied },
   ];
   const max = Math.max(f.prospects, 1);
-  const colors = ["#6366f1", "#38bdf8", "#22d3ee", "#34d399"];
+  const colors = ["#6366f1", "#38bdf8", "#34d399"];
   document.getElementById("funnel").innerHTML = steps
     .map((s, i) => {
       const pct = Math.max((s.value / max) * 100, 3);
@@ -215,7 +213,7 @@ function renderAsk(rows) {
 function renderCategory(rows) {
   destroyChart("category");
   if (!rows || !rows.length) return;
-  const statuses = ["replied", "sent", "pending", "skipped", "failed"];
+  const statuses = ["replied", "sent", "pending", "failed"];
   CHARTS.category = new Chart(document.getElementById("categoryChart"), {
     type: "bar",
     data: {
