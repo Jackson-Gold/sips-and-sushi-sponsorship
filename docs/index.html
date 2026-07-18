@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsorship Outreach Dashboard</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div>
+        <h1 id="event-name">Sponsorship Outreach</h1>
+        <p id="event-meta" class="muted"></p>
+      </div>
+      <div class="updated">
+        <div>
+          <span class="muted">Last updated</span>
+          <span id="generated-at">—</span>
+        </div>
+        <button id="refresh-btn" class="refresh-btn" title="Reload latest data">
+          <span class="refresh-icon">&#8635;</span> Refresh
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="kpis" class="kpi-grid" aria-label="Key metrics"></section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Outreach funnel</h2>
+        <div id="funnel" class="funnel"></div>
+      </div>
+      <div class="card">
+        <h2>Sponsorship likelihood</h2>
+        <div class="chart-box"><canvas id="likelihoodChart"></canvas></div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <h2>Activity over time</h2>
+        <div class="chart-box"><canvas id="timelineChart"></canvas></div>
+        <p id="timeline-empty" class="empty hidden">No emails sent yet. The timeline populates once outreach begins.</p>
+      </div>
+      <div class="card">
+        <h2>Most requested "asks"</h2>
+        <div class="chart-box"><canvas id="askChart"></canvas></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Status by category</h2>
+      <div class="chart-box tall"><canvas id="categoryChart"></canvas></div>
+    </section>
+
+    <section class="card">
+      <div class="table-head">
+        <h2>Prospects</h2>
+        <div class="controls">
+          <input id="search" type="search" placeholder="Search company…" />
+          <select id="status-filter">
+            <option value="">All statuses</option>
+            <option value="replied">Replied</option>
+            <option value="sent">Sent</option>
+            <option value="pending">Pending</option>
+            <option value="skipped">Route-only</option>
+            <option value="failed">Failed</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="company-table">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Category</th>
+              <th>Likelihood</th>
+              <th>Status</th>
+              <th>Contact route</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="table-count" class="muted"></p>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    <p>Static dashboard published via GitHub Pages. Data refreshed by GitHub Actions.</p>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

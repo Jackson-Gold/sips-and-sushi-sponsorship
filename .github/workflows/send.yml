@@ -1,0 +1,100 @@
+name: Send outreach emails
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (write previews, do not send)"
+        type: boolean
+        default: true
+      limit:
+        description: "Max emails to send this run (0 = no limit)"
+        required: false
+        default: "10"
+      only:
+        description: "Optional comma-separated prospect ids to restrict to"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Rebuild prospects (in case spreadsheet changed)
+        run: python scripts/build_data.py
+
+      - name: Send emails
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+          FROM_NAME: ${{ vars.FROM_NAME }}
+          REPLY_TO: ${{ secrets.REPLY_TO }}
+          SEND_THROTTLE_SECONDS: ${{ vars.SEND_THROTTLE_SECONDS }}
+          EVENT_NAME: ${{ vars.EVENT_NAME }}
+          EVENT_DATE: ${{ vars.EVENT_DATE }}
+          EVENT_CITY: ${{ vars.EVENT_CITY }}
+          EVENT_VENUE: ${{ vars.EVENT_VENUE }}
+          EVENT_ATTENDANCE: ${{ vars.EVENT_ATTENDANCE }}
+          EVENT_AUDIENCE: ${{ vars.EVENT_AUDIENCE }}
+          EVENT_WEBSITE: ${{ vars.EVENT_WEBSITE }}
+          ORGANIZER_NAME: ${{ vars.ORGANIZER_NAME }}
+          ORGANIZER_TITLE: ${{ vars.ORGANIZER_TITLE }}
+          ORGANIZER_ORG: ${{ vars.ORGANIZER_ORG }}
+          ORGANIZER_PHONE: ${{ vars.ORGANIZER_PHONE }}
+          PHYSICAL_ADDRESS: ${{ vars.PHYSICAL_ADDRESS }}
+          OPT_OUT_EMAIL: ${{ vars.OPT_OUT_EMAIL }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then FLAGS="--dry-run"; fi
+          python scripts/send_emails.py $FLAGS --limit "${{ inputs.limit }}" --only "${{ inputs.only }}"
+
+      - name: Rebuild dashboard stats
+        env:
+          EVENT_NAME: ${{ vars.EVENT_NAME }}
+          EVENT_DATE: ${{ vars.EVENT_DATE }}
+          EVENT_CITY: ${{ vars.EVENT_CITY }}
+          EVENT_VENUE: ${{ vars.EVENT_VENUE }}
+          EVENT_ATTENDANCE: ${{ vars.EVENT_ATTENDANCE }}
+          EVENT_AUDIENCE: ${{ vars.EVENT_AUDIENCE }}
+          EVENT_WEBSITE: ${{ vars.EVENT_WEBSITE }}
+        run: python scripts/aggregate.py
+
+      - name: Commit send log + stats
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sends.json data/prospects.json docs/data/stats.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: record outreach sends"
+            git push
+          fi
+
+      - name: Upload previews (dry run)
+        if: ${{ inputs.dry_run == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: email-previews
+          path: previews/
+          if-no-files-found: ignore

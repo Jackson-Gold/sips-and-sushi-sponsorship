@@ -1,0 +1,7 @@
+{%- if prospect.likelihood == "High" -%}
+Partnership invite: feature {{ first_brand }} at {{ event.name }}
+{%- elif prospect.likelihood == "Low" -%}
+Routing request: beverage partnership for {{ event.name }}
+{%- else -%}
+{{ prospect.company }} x {{ event.name }} - sponsorship inquiry
+{%- endif -%}

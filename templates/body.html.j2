@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0;padding:0;background:#f4f4f5;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f5;padding:24px 0;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0"
+               style="max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;font-family:Helvetica,Arial,sans-serif;color:#1f2933;">
+          <tr>
+            <td style="background:#111827;padding:24px 32px;color:#f9fafb;">
+              <div style="font-size:20px;font-weight:700;">{{ event.name }}</div>
+              <div style="font-size:13px;color:#9ca3af;margin-top:4px;">
+                {{ event.date }} &bull; {{ event.venue }}, {{ event.city }}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:32px;font-size:15px;line-height:1.6;">
+              <p style="margin:0 0 16px;">Hello {{ prospect.company }} team,</p>
+
+              <p style="margin:0 0 16px;">
+                My name is {{ organizer.name }}, {{ organizer.title }} at
+                {{ organizer.org }}. We are producing <strong>{{ event.name }}</strong>,
+                a craft cocktail event on {{ event.date }} at {{ event.venue }} in
+                {{ event.city }}. We expect roughly {{ event.attendance }} guests,
+                including {{ event.audience }}.
+              </p>
+
+              {% if prospect.likelihood == "High" %}
+              <p style="margin:0 0 16px;">
+                We would be thrilled to feature <strong>{{ first_brand }}</strong> as an
+                official beverage partner. Given {{ prospect.company }}'s portfolio, this
+                is a natural fit for a signature moment at the event.
+              </p>
+              {% elif prospect.likelihood == "Low" %}
+              <p style="margin:0 0 16px;">
+                This is not a press request. Could you help route this note to the person
+                who handles experiential marketing or event partnerships for
+                {{ prospect.company }}?
+              </p>
+              {% else %}
+              <p style="margin:0 0 16px;">
+                We are seeking a beverage partner for the event and would love to explore
+                featuring <strong>{{ first_brand }}</strong>. If there is a local
+                field-marketing or brand team better suited for this, a quick introduction
+                would be hugely appreciated.
+              </p>
+              {% endif %}
+
+              <p style="margin:0 0 16px;">
+                <strong>What we are hoping for:</strong> {{ ask_summary }}.
+              </p>
+
+              <p style="margin:0 0 16px;">
+                In return, partners receive on-site branding, dedicated activation space,
+                social and email promotion to our attendee list, and post-event
+                performance recaps.
+              </p>
+
+              <p style="margin:0 0 16px;">
+                Would you be open to a short call in the next week or two? I am happy to
+                send a full sponsorship deck with tiers and deliverables.
+              </p>
+
+              <p style="margin:0 0 4px;">Warm regards,</p>
+              <p style="margin:0;font-weight:600;">{{ organizer.name }}</p>
+              <p style="margin:0;color:#6b7280;font-size:13px;">
+                {{ organizer.title }}, {{ organizer.org }}<br>
+                {{ organizer.phone }} &bull; <a href="mailto:{{ reply_to }}" style="color:#2563eb;">{{ reply_to }}</a>
+                {% if event.website %}<br><a href="{{ event.website }}" style="color:#2563eb;">{{ event.website }}</a>{% endif %}
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:16px 32px;background:#f9fafb;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af;line-height:1.5;">
+              {{ organizer.org }} &mdash; {{ organizer.address }}<br>
+              You are receiving this one-time outreach because your company was identified
+              as a potential beverage partner for {{ event.name }}. If you would prefer not
+              to be contacted, reply with &ldquo;unsubscribe&rdquo; or email
+              <a href="mailto:{{ organizer.opt_out_email }}" style="color:#6b7280;">{{ organizer.opt_out_email }}</a>
+              and we will remove you immediately.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

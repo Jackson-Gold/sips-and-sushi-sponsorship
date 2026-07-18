@@ -1,0 +1,58 @@
+name: Track replies and refresh stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: track
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Scan inbox for replies
+        env:
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+          IMAP_PORT: ${{ secrets.IMAP_PORT }}
+          IMAP_USER: ${{ secrets.IMAP_USER }}
+          IMAP_PASS: ${{ secrets.IMAP_PASS }}
+          IMAP_FOLDER: ${{ secrets.IMAP_FOLDER }}
+        run: python scripts/track_replies.py
+
+      - name: Rebuild dashboard stats
+        env:
+          EVENT_NAME: ${{ vars.EVENT_NAME }}
+          EVENT_DATE: ${{ vars.EVENT_DATE }}
+          EVENT_CITY: ${{ vars.EVENT_CITY }}
+          EVENT_VENUE: ${{ vars.EVENT_VENUE }}
+          EVENT_ATTENDANCE: ${{ vars.EVENT_ATTENDANCE }}
+          EVENT_AUDIENCE: ${{ vars.EVENT_AUDIENCE }}
+          EVENT_WEBSITE: ${{ vars.EVENT_WEBSITE }}
+        run: python scripts/aggregate.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/status.json docs/data/stats.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh reply stats"
+            git push
+          fi

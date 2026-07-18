@@ -1,0 +1,42 @@
+Hello {{ prospect.company }} team,
+
+My name is {{ organizer.name }}, {{ organizer.title }} at {{ organizer.org }}. We are
+producing {{ event.name }}, a craft cocktail event on {{ event.date }} at
+{{ event.venue }} in {{ event.city }}. We expect roughly {{ event.attendance }}
+guests, including {{ event.audience }}.
+
+{% if prospect.likelihood == "High" -%}
+We would be thrilled to feature {{ first_brand }} as an official beverage partner.
+Given {{ prospect.company }}'s portfolio, this is a natural fit for a signature
+moment at the event.
+{%- elif prospect.likelihood == "Low" -%}
+This is not a press request. Could you help route this note to the person who
+handles experiential marketing or event partnerships for {{ prospect.company }}?
+{%- else -%}
+We are seeking a beverage partner for the event and would love to explore
+featuring {{ first_brand }}. If there is a local field-marketing or brand team
+better suited for this, a quick introduction would be hugely appreciated.
+{%- endif %}
+
+What we are hoping for: {{ ask_summary }}.
+
+In return, partners receive on-site branding, dedicated activation space, social
+and email promotion to our attendee list, and post-event performance recaps.
+
+Would you be open to a short call in the next week or two? I am happy to send a
+full sponsorship deck with tiers and deliverables.
+
+Thank you for your time and consideration.
+
+Warm regards,
+{{ organizer.name }}
+{{ organizer.title }}, {{ organizer.org }}
+{{ organizer.phone }} | {{ reply_to }}
+{% if event.website %}{{ event.website }}{% endif %}
+
+--
+{{ organizer.org }} - {{ organizer.address }}
+You are receiving this one-time outreach because your company was identified as a
+potential beverage partner for {{ event.name }}. If you would prefer not to be
+contacted about this event, reply with "unsubscribe" or email {{ organizer.opt_out_email }}
+and we will remove you immediately.
