@@ -49,7 +49,7 @@ The audience is made up of **bartenders, cocktail enthusiasts, and hospitality p
 
 We're already lining up a handful of well-known spirits brands for this year's showcase, and we'd love to have **East Imperial** alongside them.
 
-If you'd be interested, we'd be happy to showcase whatever makes the most sense from your perspective - whether that's a few cases of tonics and ginger beer for the bartenders to build highballs with, branded glassware, bar tools, or anything else you'd like guests to experience. If there's a particular tonic you'd love us to feature, we'd be excited to build a signature serve around it.
+Just to be clear, taking part is completely free - there's no sponsorship fee of any kind, only whatever product or support you're comfortable providing. If you'd be interested, we'd be glad to feature whatever makes the most sense from your perspective - whether that's a few cases of tonics and ginger beer for the bartenders to build highballs with, branded glassware, bar tools, or anything else you'd like guests to experience. If there's a particular tonic you'd love us to feature, we'd be excited to build a signature serve around it.
 
 If you'd like, I'd be happy to send over a little more about the event, the bartenders, and what we have planned.
 
@@ -74,7 +74,7 @@ The audience is made up of **young professionals, hospitality creatives, and coc
 
 We're already lining up a handful of well-known spirits brands for this year's showcase, and we'd love to have **Aplós** alongside them as our functional, alcohol-free centerpiece.
 
-If you'd be interested, we'd be happy to showcase whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build a dedicated zero-proof activation, branded glassware, merchandise, or anything else you'd like guests to experience. If there's a specific serve you'd love us to pour, we'd be excited to build something around it.
+Just to be clear, taking part is completely free - there's no sponsorship fee of any kind, only whatever product or support you're comfortable providing. If you'd be interested, we'd be glad to feature whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build a dedicated zero-proof activation, branded glassware, merchandise, or anything else you'd like guests to experience. If there's a specific serve you'd love us to pour, we'd be excited to build something around it.
 
 If you'd like, I'd be happy to send over a little more about the event, the bartenders, and what we have planned.
 
@@ -99,7 +99,7 @@ The audience is made up of **spirits enthusiasts, aperitivo lovers, and hospital
 
 We're already lining up a handful of well-known spirits brands for this year's showcase, and we'd love to have **Italicus** alongside them to own the aperitivo moment.
 
-If you'd be interested, we'd be happy to showcase whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build an aperitivo activation, branded glassware, bar tools, or anything else you'd like guests to experience. If there's a signature serve you'd love us to pour, we'd be excited to build the welcome cocktail around it.
+Just to be clear, taking part is completely free - there's no sponsorship fee of any kind, only whatever product or support you're comfortable providing. If you'd be interested, we'd be glad to feature whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build an aperitivo activation, branded glassware, bar tools, or anything else you'd like guests to experience. If there's a signature serve you'd love us to pour, we'd be excited to build the welcome cocktail around it.
 
 If you'd like, I'd be happy to send over a little more about the event, the bartenders, and what we have planned.
 
@@ -124,7 +124,7 @@ The audience is made up of **craft cocktail enthusiasts, tiki lovers, and workin
 
 We're already lining up a handful of well-known spirits brands for this year's showcase, and we'd love to have **Hamilton Rum** alongside them to anchor the rum and tiki side of the night.
 
-If you'd be interested, we'd be happy to showcase whatever makes the most sense from your perspective - whether that's a few bottles across the range for the bartenders to work with, a little tiki/craft education for guests, branded glassware, or anything else you'd like people to experience. If there's a specific expression you'd love us to pour, we'd be excited to build a cocktail around it.
+Just to be clear, taking part is completely free - there's no sponsorship fee of any kind, only whatever product or support you're comfortable providing. If you'd be interested, we'd be glad to feature whatever makes the most sense from your perspective - whether that's a few bottles across the range for the bartenders to work with, a little tiki/craft education for guests, branded glassware, or anything else you'd like people to experience. If there's a specific expression you'd love us to pour, we'd be excited to build a cocktail around it.
 
 If you'd like, I'd be happy to send over a little more about the event, the bartenders, and what we have planned.
 
@@ -149,7 +149,7 @@ The audience is made up of **hospitality professionals, cocktail enthusiasts, an
 
 We're already lining up a handful of well-known spirits brands for this year's showcase, and we'd love to have **Dhos** alongside them to lead our alcohol-free menu.
 
-If you'd be interested, we'd be happy to showcase whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build a dedicated zero-proof menu, branded glassware, merchandise, or anything else you'd like guests to experience. If there's a specific serve you'd love us to feature, we'd be excited to build something around it.
+Just to be clear, taking part is completely free - there's no sponsorship fee of any kind, only whatever product or support you're comfortable providing. If you'd be interested, we'd be glad to feature whatever makes the most sense from your perspective - whether that's a few bottles for the bartenders to build a dedicated zero-proof menu, branded glassware, merchandise, or anything else you'd like guests to experience. If there's a specific serve you'd love us to feature, we'd be excited to build something around it.
 
 If you'd like, I'd be happy to send over a little more about the event, the bartenders, and what we have planned.
 
