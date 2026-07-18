@@ -1,7 +1,7 @@
 """Render and send personalized sponsorship emails.
 
-Reads `data/prospects.json`, renders per-company subject/body from the Jinja2
-templates, and either:
+Reads `data/prospects.json`, renders each company's hyper-tailored subject/body
+from `email_content.py` (with the event logo embedded), and either:
   * `--dry-run` (default off): writes preview `.eml` files to `previews/` without
     sending, or
   * live: sends via SMTP with a throttle between messages.
@@ -21,9 +21,8 @@ from datetime import datetime, timezone
 from email.message import EmailMessage
 from email.utils import formataddr, make_msgid
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
-
 import config
+import email_content
 
 
 def load_json(path, default):
@@ -39,49 +38,14 @@ def save_json(path, data):
         json.dump(data, fh, indent=2, ensure_ascii=False)
 
 
-def first_brand(brands: str, fallback: str) -> str:
-    for part in brands.split(";"):
-        part = part.strip()
-        if part:
-            return part
-    return fallback
+def load_logo() -> bytes | None:
+    logo_path = config.ROOT / "assets" / "sips_and_sushi_logo.png"
+    return logo_path.read_bytes() if logo_path.exists() else None
 
 
-def ask_summary(best_ask: str) -> str:
-    items = [p.strip().lower() for p in best_ask.split(";") if p.strip()]
-    if not items:
-        return "product support and a co-marketing partnership"
-    if len(items) == 1:
-        return items[0]
-    return ", ".join(items[:-1]) + f", and {items[-1]}"
-
-
-def build_env() -> Environment:
-    return Environment(
-        loader=FileSystemLoader(str(config.TEMPLATES_DIR)),
-        autoescape=select_autoescape(["html"]),
-        trim_blocks=True,
-        lstrip_blocks=True,
-    )
-
-
-def render_message(env: Environment, prospect: dict) -> tuple[str, str, str]:
-    ctx = {
-        "prospect": prospect,
-        "event": config.EVENT,
-        "organizer": config.ORGANIZER,
-        "reply_to": config.REPLY_TO,
-        "first_brand": first_brand(prospect.get("brands", ""), prospect["company"]),
-        "ask_summary": ask_summary(prospect.get("best_ask", "")),
-    }
-    subject = env.get_template("subject.txt.j2").render(**ctx).strip()
-    text_body = env.get_template("body.txt.j2").render(**ctx)
-    html_body = env.get_template("body.html.j2").render(**ctx)
-    return subject, text_body, html_body
-
-
-def make_email(prospect: dict, subject: str, text_body: str, html_body: str,
-               message_id: str) -> EmailMessage:
+def make_email(prospect: dict, message_id: str, logo_bytes: bytes | None) -> tuple[EmailMessage, str]:
+    """Build the tailored email for a prospect. Returns (message, subject)."""
+    subject = email_content.build_subject(prospect)
     msg = EmailMessage()
     msg["From"] = formataddr((config.FROM_NAME, config.FROM_EMAIL))
     msg["To"] = prospect["email"]
@@ -89,9 +53,18 @@ def make_email(prospect: dict, subject: str, text_body: str, html_body: str,
     msg["Subject"] = subject
     msg["Message-ID"] = message_id
     msg["List-Unsubscribe"] = f"<mailto:{config.ORGANIZER['opt_out_email']}?subject=unsubscribe>"
-    msg.set_content(text_body)
-    msg.add_alternative(html_body, subtype="html")
-    return msg
+
+    msg.set_content(email_content.to_text(prospect))
+    logo_cid = None
+    if logo_bytes:
+        logo_cid = make_msgid(domain=config.FROM_EMAIL.split("@")[-1])[1:-1]
+    msg.add_alternative(email_content.to_html(prospect, logo_cid), subtype="html")
+    if logo_bytes:
+        msg.get_payload()[-1].add_related(
+            logo_bytes, maintype="image", subtype="png", cid=f"<{logo_cid}>",
+            filename="sips_and_sushi_logo.png",
+        )
+    return msg, subject
 
 
 def now_iso() -> str:
@@ -118,7 +91,7 @@ def main() -> None:
         sys.exit("Missing data/prospects.json. Run build_data.py first.")
 
     sends = load_json(config.SENDS_JSON, {})
-    env = build_env()
+    logo_bytes = load_logo()
     only = {s.strip() for s in args.only.split(",") if s.strip()}
     test_to = args.test_to.strip()
     if test_to:
@@ -164,9 +137,8 @@ def main() -> None:
                 }
                 continue
 
-            subject, text_body, html_body = render_message(env, prospect)
             message_id = make_msgid(domain=config.FROM_EMAIL.split("@")[-1])
-            msg = make_email(prospect, subject, text_body, html_body, message_id)
+            msg, subject = make_email(prospect, message_id, logo_bytes)
 
             if test_to:
                 del msg["To"]
