@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T22:07:04.510770+00:00",
+  "generated_at": "2026-07-19T02:33:22.025992+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,11 +11,11 @@
   },
   "kpis": {
     "total": 66,
-    "sent": 66,
-    "replied": 0,
+    "sent": 61,
+    "replied": 5,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 0.0
+    "reply_rate": 8.2
   },
   "by_category": [
     {
@@ -29,24 +29,24 @@
     {
       "label": "Nonalcoholic",
       "total": 11,
-      "sent": 11,
-      "replied": 0,
+      "sent": 8,
+      "replied": 3,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "RTD",
       "total": 9,
-      "sent": 9,
-      "replied": 0,
+      "sent": 8,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Mixer",
       "total": 7,
-      "sent": 7,
-      "replied": 0,
+      "sent": 6,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -143,16 +143,16 @@
     {
       "label": "High",
       "total": 46,
-      "sent": 46,
-      "replied": 0,
+      "sent": 43,
+      "replied": 3,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Medium",
       "total": 20,
-      "sent": 20,
-      "replied": 0,
+      "sent": 18,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     }
@@ -212,12 +212,17 @@
       "date": "2026-07-18",
       "sent": 66,
       "replies": 0
+    },
+    {
+      "date": "2026-07-19",
+      "sent": 0,
+      "replies": 5
     }
   ],
   "funnel": {
     "prospects": 66,
-    "sent": 66,
-    "replied": 0
+    "sent": 61,
+    "replied": 5
   },
   "companies": [
     {
@@ -942,7 +947,7 @@
       "likelihood": "Medium",
       "best_ask": "Product",
       "email": "hello@thomas-henry.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://www.thomas-henry.com/contact/",
@@ -951,10 +956,10 @@
       "message_id": "<178441197402.55547.987701327372473758@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:59:36.747842+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": ""
+      "reply_count": 1,
+      "reply_from": "postmaster@thomas-henry.de",
+      "reply_subject": "Undeliverable: Inviting Thomas Henry to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-19T02:33:21.952450+00:00"
     },
     {
       "id": "liquid-death",
@@ -1057,7 +1062,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof bar",
       "email": "hello@lyres.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Official contact/wholesale route",
       "phone": "Not listed",
       "source_url": "https://lyres.com/pages/contact-us",
@@ -1066,10 +1071,10 @@
       "message_id": "<178441202993.55547.7176622357328955331@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:00:32.843795+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": ""
+      "reply_count": 1,
+      "reply_from": "hello@lyres.com",
+      "reply_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-19T02:33:21.952409+00:00"
     },
     {
       "id": "ritual-zero-proof",
@@ -1103,7 +1108,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof station",
       "email": "hello@drinkmonday.co",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://drinkmonday.co/pages/contact-us",
@@ -1112,10 +1117,10 @@
       "message_id": "<178441205214.55547.18117754634470294252@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:00:57.297222+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": ""
+      "reply_count": 1,
+      "reply_from": "hello@drinkmonday.co",
+      "reply_subject": "Inviting Monday Gin to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-19T02:33:21.952438+00:00"
     },
     {
       "id": "dhos",
@@ -1149,7 +1154,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof activation",
       "email": "hello@aplos.world",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "General contact",
       "phone": "Not listed",
       "source_url": "https://aplos.world/pages/contact",
@@ -1158,10 +1163,10 @@
       "message_id": "<178441207945.55547.15209701240677260973@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:01:26.042929+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": ""
+      "reply_count": 1,
+      "reply_from": "hello@aplos.world",
+      "reply_subject": "Re: Inviting Aplós to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-19T02:33:21.952445+00:00"
     },
     {
       "id": "casamara-club",
@@ -1402,7 +1407,7 @@
       "likelihood": "Medium",
       "best_ask": "Product; sampling",
       "email": "hello@drinkloverboy.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://drinkloverboy.com/pages/contact-us",
@@ -1411,10 +1416,10 @@
       "message_id": "<178441221661.55547.16583985866886573229@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:03:39.374919+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": ""
+      "reply_count": 1,
+      "reply_from": "hello@drinkloverboy.com",
+      "reply_subject": "Thanks for Contacting Loverboy - Message Received Re: Inviting\r\n Loverboy to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-19T02:33:21.952456+00:00"
     },
     {
       "id": "juneshine",
