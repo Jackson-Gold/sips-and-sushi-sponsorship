@@ -412,6 +412,60 @@ TAILORING: dict[str, dict[str, str]] = {
         "audience": "tequila lovers, cocktail enthusiasts, and hospitality professionals",
         "ask": "a few bottles for the bartenders and a premium tequila activation at the bar",
     },
+    "the-bitter-truth": {
+        "brand": "The Bitter Truth",
+        "hook": "I've had The Bitter Truth on my bar for years, and I'd love to feature you this year. I can already picture bartenders reaching for your **Aromatic** and **Celery** bitters to add real character to the menu - those aromatic flourishes are exactly what our guests geek out over.",
+        "audience": "bartenders, cocktail enthusiasts, and hospitality professionals",
+        "ask": "an assortment of your bitters for the bartenders and a bitters station, plus a little education moment",
+    },
+    "combier-usa": {
+        "brand": "Combier",
+        "hook": "I've been a fan of Combier for a while - the original triple sec is a thing of beauty - and I'd love to feature it this year. I can already picture a bartender building a bright margarita or a classic sidecar around **Combier L'Original**, the kind of well-made drink that pairs beautifully with fresh sushi.",
+        "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
+        "ask": "a few bottles for the bartenders to build signature serves with, plus a little education moment",
+    },
+    "boston-beer-company": {
+        "brand": "Boston Beer Company",
+        "hook": "I've long enjoyed the Boston Beer family, and I'd love to feature it this year. I can picture your beers and seltzers - a crisp **Sam Adams**, a **Truly**, or a **Twisted Tea** - as easy, sessionable options that keep the room happy and pair nicely with sushi between cocktails.",
+        "audience": "beer lovers, younger professionals, and cocktail enthusiasts",
+        "ask": "a few cases across the portfolio for the bar, plus any branded touches you'd like",
+    },
+    "titos-handmade-vodka": {
+        "brand": "Tito's",
+        "hook": "I've been a fan of Tito's for a while - it's the vodka our guests actually ask for by name - and I'd love to feature it this year. I can already picture a bartender shaking a clean **Tito's** martini or a crisp mule, exactly the kind of easy, crowd-pleasing pour that goes down well with sushi.",
+        "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
+        "ask": "a few bottles for the bartenders to work with, plus any branded touches you'd like guests to experience",
+    },
+    "fentimans-usa": {
+        "brand": "Fentimans",
+        "hook": "I've been a fan of Fentimans for a while - your botanically brewed tonics and ginger beer are a cut above - and I'd love to feature them this year. I can picture a mixer station where bartenders build crisp highballs with your **tonic** and **rose lemonade**, a bright, palate-cleansing match for fresh sushi.",
+        "audience": "bartenders, cocktail enthusiasts, and hospitality professionals",
+        "ask": "a few cases of your mixers for a mixer station, plus any branded touches you'd like",
+    },
+    "cutwater-spirits": {
+        "brand": "Cutwater",
+        "hook": "I've been impressed by Cutwater for a while - genuinely good cocktails straight from a can - and I'd love to feature you this year. I can picture your canned **margaritas** and **espresso martinis** as perfect, no-wait pours to keep the room happy between sushi courses when the bar gets busy.",
+        "audience": "cocktail enthusiasts, hospitality professionals, and younger professionals",
+        "ask": "a few cases for sampling at the bar, plus any branded touches you'd like",
+    },
+    "angostura": {
+        "brand": "Angostura",
+        "hook": "You can't build a proper bar without Angostura, and I'd love to feature you this year. I can already picture bartenders finishing old fashioneds and sours with those iconic aromatic bitters - and pouring your award-winning rums for something special - which is exactly the craft our guests love.",
+        "audience": "bartenders, cocktail enthusiasts, and hospitality professionals",
+        "ask": "an assortment of your bitters (and rum, if you're up for it) for the bartenders, plus a classic-cocktail moment",
+    },
+    "tequila-ocho": {
+        "brand": "Tequila Ocho",
+        "hook": "I've been a fan of Tequila Ocho for a while - the single-estate, vintage approach is fascinating - and I'd love to feature it this year. I can already picture a bartender building a fresh **Ocho** margarita or pouring it neat to sip while sharing the terroir story, which our guests really enjoy discovering.",
+        "audience": "tequila lovers, cocktail enthusiasts, and hospitality professionals",
+        "ask": "a few bottles for the bartenders, plus a little education moment on single-estate tequila",
+    },
+    "athletic-brewing": {
+        "brand": "Athletic Brewing",
+        "hook": "I've been a fan of Athletic Brewing for a while - you basically made non-alcoholic beer genuinely great - and I'd love to feature you this year. I can already picture a dedicated NA station pouring **Run Wild IPA** and **Upside Dawn**, a crisp, alcohol-free option that's a natural, refreshing match for sushi.",
+        "audience": "wellness-minded guests, younger professionals, and a growing sober-curious crowd",
+        "ask": "a few cases for a dedicated non-alcoholic beer station, plus any branded touches you'd like",
+    },
 }
 
 

@@ -60,9 +60,23 @@ def first_email(value: str) -> str:
     return ""
 
 
+def load_discovered_emails() -> dict:
+    """Public emails found via research for companies that were route-only."""
+    path = config.DATA_DIR / "discovered_emails.json"
+    if not path.exists():
+        return {}
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh).get("emails", {})
+    except Exception:  # noqa: BLE001
+        return {}
+
+
 def build() -> list[dict]:
     if not config.XLSX_PATH.exists():
         sys.exit(f"Spreadsheet not found: {config.XLSX_PATH}")
+
+    discovered = load_discovered_emails()
 
     wb = openpyxl.load_workbook(config.XLSX_PATH, read_only=True, data_only=True)
     ws = wb["Sponsor Prospects"]
@@ -96,6 +110,10 @@ def build() -> list[dict]:
 
         email = first_email(record.get("public_email", ""))
         record["id"] = pid
+        # Merge in a researched public email if the spreadsheet had none.
+        if not email and pid in discovered:
+            email = discovered[pid].strip().lower()
+            record["email_source"] = "researched"
         record["email"] = email
         record["status_class"] = "has_email" if email else "route_only"
 

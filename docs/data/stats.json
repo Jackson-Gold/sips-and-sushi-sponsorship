@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T04:06:42.867538+00:00",
+  "generated_at": "2026-07-19T04:10:44.050128+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -10,11 +10,11 @@
     "website": "https://example.com/cocktail-event"
   },
   "kpis": {
-    "total": 66,
+    "total": 75,
     "sent": 66,
     "replied": 0,
     "failed": 0,
-    "pending": 0,
+    "pending": 9,
     "reply_rate": 0.0
   },
   "sentiment": {
@@ -41,18 +41,26 @@
     },
     {
       "label": "RTD",
-      "total": 9,
+      "total": 10,
       "sent": 9,
       "replied": 0,
-      "pending": 0,
+      "pending": 1,
       "failed": 0
     },
     {
       "label": "Mixer",
-      "total": 7,
+      "total": 8,
       "sent": 7,
       "replied": 0,
-      "pending": 0,
+      "pending": 1,
+      "failed": 0
+    },
+    {
+      "label": "Bitters",
+      "total": 7,
+      "sent": 6,
+      "replied": 0,
+      "pending": 1,
       "failed": 0
     },
     {
@@ -64,31 +72,23 @@
       "failed": 0
     },
     {
-      "label": "Bitters",
-      "total": 6,
-      "sent": 6,
-      "replied": 0,
-      "pending": 0,
-      "failed": 0
-    },
-    {
       "label": "Liqueur",
-      "total": 4,
+      "total": 5,
       "sent": 4,
       "replied": 0,
-      "pending": 0,
-      "failed": 0
-    },
-    {
-      "label": "Rum",
-      "total": 2,
-      "sent": 2,
-      "replied": 0,
-      "pending": 0,
+      "pending": 1,
       "failed": 0
     },
     {
       "label": "Tequila",
+      "total": 3,
+      "sent": 2,
+      "replied": 0,
+      "pending": 1,
+      "failed": 0
+    },
+    {
+      "label": "Rum",
       "total": 2,
       "sent": 2,
       "replied": 0,
@@ -112,6 +112,14 @@
       "failed": 0
     },
     {
+      "label": "Vodka",
+      "total": 1,
+      "sent": 0,
+      "replied": 0,
+      "pending": 1,
+      "failed": 0
+    },
+    {
       "label": "Glassware",
       "total": 1,
       "sent": 1,
@@ -128,11 +136,35 @@
       "failed": 0
     },
     {
+      "label": "Bitters & rum",
+      "total": 1,
+      "sent": 0,
+      "replied": 0,
+      "pending": 1,
+      "failed": 0
+    },
+    {
       "label": "Water",
       "total": 1,
       "sent": 1,
       "replied": 0,
       "pending": 0,
+      "failed": 0
+    },
+    {
+      "label": "Nonalcoholic beer",
+      "total": 1,
+      "sent": 0,
+      "replied": 0,
+      "pending": 1,
+      "failed": 0
+    },
+    {
+      "label": "Beer/RTD",
+      "total": 1,
+      "sent": 0,
+      "replied": 0,
+      "pending": 1,
       "failed": 0
     },
     {
@@ -147,40 +179,40 @@
   "by_likelihood": [
     {
       "label": "High",
-      "total": 46,
+      "total": 47,
       "sent": 46,
       "replied": 0,
-      "pending": 0,
+      "pending": 1,
       "failed": 0
     },
     {
       "label": "Medium",
-      "total": 20,
+      "total": 28,
       "sent": 20,
       "replied": 0,
-      "pending": 0,
+      "pending": 8,
       "failed": 0
     }
   ],
   "by_best_ask": [
     {
       "label": "product",
-      "count": 62
+      "count": 71
     },
     {
       "label": "sampling",
-      "count": 13
+      "count": 14
     },
     {
       "label": "education",
-      "count": 7
-    },
-    {
-      "label": "co-marketing",
-      "count": 4
+      "count": 10
     },
     {
       "label": "tasting",
+      "count": 5
+    },
+    {
+      "label": "co-marketing",
       "count": 4
     },
     {
@@ -220,7 +252,7 @@
     }
   ],
   "funnel": {
-    "prospects": 66,
+    "prospects": 75,
     "sent": 66,
     "replied": 0
   },
@@ -501,6 +533,31 @@
       "sentiment_score": 0
     },
     {
+      "id": "titos-handmade-vodka",
+      "company": "Tito's Handmade Vodka",
+      "parent_company": "Fifth Generation",
+      "brands": "Tito's Handmade Vodka",
+      "category": "Vodka",
+      "likelihood": "Medium",
+      "best_ask": "Product; community event support",
+      "email": "marketing@titosvodka.com",
+      "status": "pending",
+      "contact_route": "Official contact page",
+      "phone": "512-389-9011",
+      "source_url": "https://www.titosvodka.com/contact-faqs",
+      "routing_notes": "Strong event history but no public sponsorship inbox.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T21:55:41.354715+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
       "id": "fever-tree-usa",
       "company": "Fever-Tree USA",
       "parent_company": "Fever-Tree / Molson Coors U.S. commercialization",
@@ -626,6 +683,31 @@
       "sentiment_score": 0
     },
     {
+      "id": "angostura",
+      "company": "Angostura",
+      "parent_company": "House of Angostura",
+      "brands": "Angostura Aromatic Bitters; Orange Bitters; rum",
+      "category": "Bitters & rum",
+      "likelihood": "High",
+      "best_ask": "Bitters; education; product",
+      "email": "icss@angostura.com",
+      "status": "pending",
+      "contact_route": "Official contact form",
+      "phone": "Not listed",
+      "source_url": "https://angosturabitters.com/contact-us/",
+      "routing_notes": "Highly relevant to cocktail education and tastings.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T21:56:34.046476+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
       "id": "fee-brothers",
       "company": "Fee Brothers",
       "parent_company": "Fee Brothers",
@@ -718,6 +800,31 @@
       "message_id": "<178441182667.55547.6117762872189897599@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:57:09.207651+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "the-bitter-truth",
+      "company": "The Bitter Truth",
+      "parent_company": "The Bitter Truth",
+      "brands": "Bitters; liqueurs",
+      "category": "Bitters",
+      "likelihood": "Medium",
+      "best_ask": "Product; education",
+      "email": "info@the-bitter-truth.com",
+      "status": "pending",
+      "contact_route": "Official contact route",
+      "phone": "Not listed",
+      "source_url": "https://the-bitter-truth.com/contact/",
+      "routing_notes": "Importer/local distributor may control U.S. support.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T21:57:17.211563+00:00",
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
@@ -968,6 +1075,31 @@
       "message_id": "<178441195027.55547.8394771190542339544@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:59:14.527049+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "fentimans-usa",
+      "company": "Fentimans USA",
+      "parent_company": "Fentimans",
+      "brands": "Botanical mixers",
+      "category": "Mixer",
+      "likelihood": "Medium",
+      "best_ask": "Product",
+      "email": "info@drinkfentimans.com",
+      "status": "pending",
+      "contact_route": "Official contact form",
+      "phone": "Not listed",
+      "source_url": "https://www.fentimans.com/pages/contact-us",
+      "routing_notes": "May require U.S. importer/distributor routing.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T21:59:22.529136+00:00",
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
@@ -1326,6 +1458,81 @@
       "sentiment_score": 0
     },
     {
+      "id": "athletic-brewing",
+      "company": "Athletic Brewing",
+      "parent_company": "Athletic Brewing",
+      "brands": "Nonalcoholic beer",
+      "category": "Nonalcoholic beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; hydration/beer option",
+      "email": "info@athleticbrewing.com",
+      "status": "pending",
+      "contact_route": "Donations/sponsorship request form",
+      "phone": "Not listed",
+      "source_url": "https://athleticbrewing.com/pages/donation-request",
+      "routing_notes": "Established sponsorship process.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T22:02:21.776408+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "boston-beer-company",
+      "company": "Boston Beer Company",
+      "parent_company": "Boston Beer",
+      "brands": "Sam Adams; Truly; Dogfish Head; Angry Orchard",
+      "category": "Beer/RTD",
+      "likelihood": "Medium",
+      "best_ask": "Product; RTD sampling",
+      "email": "media@bostonbeer.com",
+      "status": "pending",
+      "contact_route": "Corporate contact",
+      "phone": "Not listed",
+      "source_url": "https://www.bostonbeer.com/contact-us",
+      "routing_notes": "Better for larger or local-market events.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T22:02:21.776647+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "cutwater-spirits",
+      "company": "Cutwater Spirits",
+      "parent_company": "Anheuser-Busch",
+      "brands": "Cutwater canned cocktails",
+      "category": "RTD",
+      "likelihood": "Medium",
+      "best_ask": "Product; sampling",
+      "email": "info@cutwaterspirits.com",
+      "status": "pending",
+      "contact_route": "Brand contact route",
+      "phone": "Not listed",
+      "source_url": "https://www.cutwaterspirits.com/contact-us",
+      "routing_notes": "Good cocktail-event fit.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T22:02:21.776682+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
       "id": "tip-top-proper-cocktails",
       "company": "Tip Top Proper Cocktails",
       "parent_company": "Tip Top Cocktails",
@@ -1676,6 +1883,31 @@
       "sentiment_score": 0
     },
     {
+      "id": "combier-usa",
+      "company": "Combier USA",
+      "parent_company": "Combier",
+      "brands": "Orange liqueur; fruit liqueurs",
+      "category": "Liqueur",
+      "likelihood": "Medium",
+      "best_ask": "Product; tasting",
+      "email": "hello@cnibrands.com",
+      "status": "pending",
+      "contact_route": "Brand/importer contact route",
+      "phone": "Not listed",
+      "source_url": "https://combierusa.com/contact/",
+      "routing_notes": "Local importer/distributor may decide.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T22:05:02.391481+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
       "id": "pierre-ferrand-maison-ferrand",
       "company": "Pierre Ferrand / Maison Ferrand",
       "parent_company": "Maison Ferrand",
@@ -1843,6 +2075,31 @@
       "message_id": "<178441237637.55547.13002563775485336645@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:06:23.784901+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "tequila-ocho",
+      "company": "Tequila Ocho",
+      "parent_company": "Tequila Ocho / Heaven Hill U.S.",
+      "brands": "Tequila Ocho",
+      "category": "Tequila",
+      "likelihood": "Medium",
+      "best_ask": "Product; education",
+      "email": "info@ochotequila.com",
+      "status": "pending",
+      "contact_route": "Route through brand or Heaven Hill",
+      "phone": "Not listed",
+      "source_url": "https://tequilaocho.com/contact/",
+      "routing_notes": "Strong bartender credibility.",
+      "subject": "",
+      "message_id": "",
+      "send_reason": "no_email",
+      "sent_at": "2026-07-18T22:06:31.785995+00:00",
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",

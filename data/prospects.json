@@ -320,8 +320,9 @@
     "best_ask": "Product; community event support",
     "routing_notes": "Strong event history but no public sponsorship inbox.",
     "id": "titos-handmade-vodka",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "marketing@titosvodka.com",
+    "status_class": "has_email"
   },
   {
     "company": "Fever-Tree USA",
@@ -446,8 +447,9 @@
     "best_ask": "Bitters; education; product",
     "routing_notes": "Highly relevant to cocktail education and tastings.",
     "id": "angostura",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "icss@angostura.com",
+    "status_class": "has_email"
   },
   {
     "company": "Fee Brothers",
@@ -536,8 +538,9 @@
     "best_ask": "Product; education",
     "routing_notes": "Importer/local distributor may control U.S. support.",
     "id": "the-bitter-truth",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "info@the-bitter-truth.com",
+    "status_class": "has_email"
   },
   {
     "company": "Peychaud's",
@@ -734,8 +737,9 @@
     "best_ask": "Product",
     "routing_notes": "May require U.S. importer/distributor routing.",
     "id": "fentimans-usa",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "info@drinkfentimans.com",
+    "status_class": "has_email"
   },
   {
     "company": "East Imperial",
@@ -1130,8 +1134,9 @@
     "best_ask": "Product; hydration/beer option",
     "routing_notes": "Established sponsorship process.",
     "id": "athletic-brewing",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "info@athleticbrewing.com",
+    "status_class": "has_email"
   },
   {
     "company": "Heineken USA",
@@ -1202,8 +1207,9 @@
     "best_ask": "Product; RTD sampling",
     "routing_notes": "Better for larger or local-market events.",
     "id": "boston-beer-company",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "media@bostonbeer.com",
+    "status_class": "has_email"
   },
   {
     "company": "High Noon",
@@ -1238,8 +1244,9 @@
     "best_ask": "Product; sampling",
     "routing_notes": "Good cocktail-event fit.",
     "id": "cutwater-spirits",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "info@cutwaterspirits.com",
+    "status_class": "has_email"
   },
   {
     "company": "On The Rocks Cocktails",
@@ -1544,8 +1551,9 @@
     "best_ask": "Product; tasting",
     "routing_notes": "Local importer/distributor may decide.",
     "id": "combier-usa",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "hello@cnibrands.com",
+    "status_class": "has_email"
   },
   {
     "company": "Pierre Ferrand / Maison Ferrand",
@@ -1760,8 +1768,9 @@
     "best_ask": "Product; education",
     "routing_notes": "Strong bartender credibility.",
     "id": "tequila-ocho",
-    "email": "",
-    "status_class": "route_only"
+    "email_source": "researched",
+    "email": "info@ochotequila.com",
+    "status_class": "has_email"
   },
   {
     "company": "Código 1530",

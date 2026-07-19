@@ -1,0 +1,14 @@
+{
+  "_note": "Public emails discovered via research for companies that were route-only in the source spreadsheet. Each was verified from an official page or a reputable listing. build_data.py merges these so the companies become emailable prospects.",
+  "emails": {
+    "the-bitter-truth": "info@the-bitter-truth.com",
+    "combier-usa": "hello@cnibrands.com",
+    "boston-beer-company": "media@bostonbeer.com",
+    "titos-handmade-vodka": "marketing@titosvodka.com",
+    "fentimans-usa": "info@drinkfentimans.com",
+    "cutwater-spirits": "info@cutwaterspirits.com",
+    "angostura": "icss@angostura.com",
+    "tequila-ocho": "info@ochotequila.com",
+    "athletic-brewing": "info@athleticbrewing.com"
+  }
+}
