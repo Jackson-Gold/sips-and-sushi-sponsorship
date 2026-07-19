@@ -23,8 +23,7 @@ const CHARTS = {};
 async function loadAndRender() {
   let stats;
   try {
-    const res = await fetch(`data/stats.json?ts=${Date.now()}`);
-    stats = await res.json();
+    stats = await fetchStats();
   } catch (err) {
     document.querySelector("main").innerHTML =
       '<p class="empty">Could not load data/stats.json. Run the pipeline to generate it.</p>';
@@ -63,11 +62,121 @@ function main() {
   });
 }
 
+const TRACK_WORKFLOW = "track.yml";
+let LAST_GENERATED_AT = "";
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function repoSlug() {
+  try {
+    const owner = location.hostname.split(".")[0];
+    const seg = location.pathname.split("/").filter(Boolean)[0];
+    if (owner && seg && location.hostname.endsWith("github.io")) return `${owner}/${seg}`;
+  } catch (e) { /* fall through */ }
+  return "Jackson-Gold/sips-and-sushi-sponsorship";
+}
+
+function setRefreshStatus(text) {
+  document.getElementById("refresh-status").textContent = text || "";
+}
+
+async function fetchStats() {
+  const res = await fetch(`data/stats.json?ts=${Date.now()}`);
+  return res.json();
+}
+
 async function onRefresh() {
   const btn = document.getElementById("refresh-btn");
+  let token = localStorage.getItem("gh_pat") || "";
+  if (!token) {
+    token = (window.prompt(
+      "To scan your inbox for new replies, paste a GitHub token with " +
+      "'Actions: read and write' permission on this repo. It is stored only in " +
+      "this browser.\n\nLeave blank to just reload the latest saved data."
+    ) || "").trim();
+    if (token) localStorage.setItem("gh_pat", token);
+  }
+
   btn.classList.add("loading");
-  await loadAndRender();
-  setTimeout(() => btn.classList.remove("loading"), 400);
+  try {
+    if (token) {
+      await runTracker(token);
+    }
+    setRefreshStatus("Updating…");
+    await loadAndRender();
+    setRefreshStatus("");
+  } catch (err) {
+    setRefreshStatus("");
+    await loadAndRender();
+    window.alert(`Could not run the inbox scan: ${err.message}\nReloaded the latest saved data instead.`);
+  } finally {
+    setTimeout(() => btn.classList.remove("loading"), 400);
+  }
+}
+
+async function runTracker(token) {
+  const base = `https://api.github.com/repos/${repoSlug()}`;
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+
+  setRefreshStatus("Starting inbox scan…");
+  const prevGenerated = LAST_GENERATED_AT;
+  const since = new Date(Date.now() - 15000).toISOString();
+
+  const disp = await fetch(`${base}/actions/workflows/${TRACK_WORKFLOW}/dispatches`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ ref: "main" }),
+  });
+  if (disp.status === 401 || disp.status === 403) {
+    localStorage.removeItem("gh_pat");
+    throw new Error("Token rejected. It needs 'Actions: read and write' on this repo.");
+  }
+  if (!disp.ok && disp.status !== 204) {
+    throw new Error(`Failed to start workflow (HTTP ${disp.status}).`);
+  }
+
+  // Locate the run we just triggered.
+  let runId = null;
+  for (let i = 0; i < 10 && !runId; i++) {
+    await sleep(2000);
+    const r = await fetch(
+      `${base}/actions/workflows/${TRACK_WORKFLOW}/runs?event=workflow_dispatch&per_page=5`,
+      { headers }
+    );
+    const j = await r.json();
+    const run = (j.workflow_runs || []).find((x) => new Date(x.created_at) >= new Date(since));
+    if (run) runId = run.id;
+  }
+
+  // Poll the run to completion.
+  if (runId) {
+    for (let i = 0; i < 50; i++) {
+      await sleep(3000);
+      const r = await fetch(`${base}/actions/runs/${runId}`, { headers });
+      const j = await r.json();
+      setRefreshStatus(`Scanning inbox… (${j.status})`);
+      if (j.status === "completed") break;
+    }
+  } else {
+    setRefreshStatus("Scanning inbox…");
+    await sleep(20000);
+  }
+
+  // Wait for the committed stats to publish to Pages (new generated_at).
+  setRefreshStatus("Publishing update…");
+  for (let i = 0; i < 30; i++) {
+    await sleep(3000);
+    try {
+      const stats = await fetchStats();
+      if (stats.generated_at && stats.generated_at !== prevGenerated) return;
+    } catch (e) { /* keep waiting */ }
+  }
 }
 
 function destroyChart(key) {
@@ -83,6 +192,7 @@ function renderHeader(stats) {
   const meta = [e.date, e.venue, e.city].filter(Boolean).join("  •  ");
   document.getElementById("event-meta").textContent = meta;
   if (stats.generated_at) {
+    LAST_GENERATED_AT = stats.generated_at;
     document.getElementById("generated-at").textContent =
       new Date(stats.generated_at).toLocaleString();
   }
