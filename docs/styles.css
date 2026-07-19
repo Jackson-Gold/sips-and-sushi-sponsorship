@@ -156,6 +156,16 @@ tbody tr:hover { background: var(--panel-2); }
   font-size: 12px;
   font-weight: 600;
 }
+.sentiment-summary { display: flex; flex-direction: column; gap: 12px; }
+.sent-row { display: flex; align-items: center; justify-content: space-between; }
+.sent-row .lbl { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.sent-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.sent-row .num { font-size: 22px; font-weight: 700; }
+
+.badge.positive { background: rgba(52,211,153,.15); color: var(--replied); }
+.badge.neutral { background: rgba(148,163,184,.15); color: var(--skipped); }
+.badge.negative { background: rgba(248,113,113,.15); color: var(--failed); }
+
 .badge.replied { background: rgba(52,211,153,.15); color: var(--replied); }
 .badge.sent { background: rgba(56,189,248,.15); color: var(--sent); }
 .badge.pending { background: rgba(251,191,36,.15); color: var(--pending); }

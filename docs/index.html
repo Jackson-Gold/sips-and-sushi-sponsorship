@@ -53,6 +53,19 @@
       </div>
     </section>
 
+    <section class="grid-2">
+      <div class="card">
+        <h2>Reply sentiment</h2>
+        <div class="chart-box"><canvas id="sentimentChart"></canvas></div>
+        <p id="sentiment-empty" class="empty hidden">No genuine replies yet. Automated replies and bounces are excluded.</p>
+      </div>
+      <div class="card">
+        <h2>Sentiment summary</h2>
+        <div id="sentiment-summary" class="sentiment-summary"></div>
+        <p class="muted" style="margin-top:12px;">Out-of-office, auto-responders, and bounced emails are detected and not counted as replies.</p>
+      </div>
+    </section>
+
     <section class="card">
       <h2>Status by category</h2>
       <div class="chart-box tall"><canvas id="categoryChart"></canvas></div>

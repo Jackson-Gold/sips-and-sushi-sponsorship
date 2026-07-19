@@ -36,6 +36,7 @@ async function loadAndRender() {
   renderLikelihood(stats.by_likelihood);
   renderTimeline(stats.timeline);
   renderAsk(stats.by_best_ask);
+  renderSentiment(stats.sentiment);
   renderCategory(stats.by_category);
 
   ALL_COMPANIES = stats.companies || [];
@@ -320,6 +321,47 @@ function renderAsk(rows) {
   });
 }
 
+function renderSentiment(s) {
+  destroyChart("sentiment");
+  const empty = document.getElementById("sentiment-empty");
+  const summary = document.getElementById("sentiment-summary");
+  s = s || { positive: 0, neutral: 0, negative: 0 };
+  const total = (s.positive || 0) + (s.neutral || 0) + (s.negative || 0);
+
+  const items = [
+    { key: "positive", label: "Positive", color: "#34d399", value: s.positive || 0 },
+    { key: "neutral", label: "Neutral", color: "#94a3b8", value: s.neutral || 0 },
+    { key: "negative", label: "Negative", color: "#f87171", value: s.negative || 0 },
+  ];
+  summary.innerHTML = items.map((i) => `
+    <div class="sent-row">
+      <span class="lbl"><span class="sent-dot" style="background:${i.color}"></span>${i.label}</span>
+      <span class="num" style="color:${i.color}">${i.value}</span>
+    </div>`).join("");
+
+  if (!total) {
+    empty.classList.remove("hidden");
+    return;
+  }
+  empty.classList.add("hidden");
+  CHARTS.sentiment = new Chart(document.getElementById("sentimentChart"), {
+    type: "doughnut",
+    data: {
+      labels: items.map((i) => i.label),
+      datasets: [{
+        data: items.map((i) => i.value),
+        backgroundColor: items.map((i) => i.color),
+        borderWidth: 0,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { position: "right" } },
+    },
+  });
+}
+
 function renderCategory(rows) {
   destroyChart("category");
   if (!rows || !rows.length) return;
@@ -424,9 +466,13 @@ function openModal(id) {
 
   let reply = "";
   if (c.status === "replied") {
+    const sent = c.sentiment
+      ? `<span class="badge ${c.sentiment}">${c.sentiment}</span> <span class="muted">(score ${c.sentiment_score})</span>`
+      : "—";
     reply = `
       <div class="detail-section-title">Reply</div>
       <dl class="detail-grid">
+        ${row("Sentiment", sent)}
         ${row("Replies", c.reply_count || 1)}
         ${row("From", escapeHtml(c.reply_from) || "—")}
         ${row("Subject", escapeHtml(c.reply_subject) || "—")}

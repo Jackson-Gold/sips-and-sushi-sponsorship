@@ -59,6 +59,7 @@ def main() -> None:
 
     companies = []
     kpi = Counter()
+    sentiment_counter = Counter()
     by_category = defaultdict(lambda: Counter())
     by_likelihood = defaultdict(lambda: Counter())
     ask_counter = Counter()
@@ -90,6 +91,7 @@ def main() -> None:
             timeline_sent[date_of(send.get("timestamp", ""))] += 1
         if rep:
             timeline_reply[date_of(rep.get("first_reply_at", ""))] += 1
+            sentiment_counter[rep.get("sentiment", "neutral")] += 1
 
         companies.append({
             "id": pid,
@@ -113,6 +115,8 @@ def main() -> None:
             "reply_from": rep.get("last_from", "") if rep else "",
             "reply_subject": rep.get("last_subject", "") if rep else "",
             "reply_at": rep.get("first_reply_at", "") if rep else "",
+            "sentiment": rep.get("sentiment", "") if rep else "",
+            "sentiment_score": rep.get("sentiment_score", 0) if rep else 0,
         })
 
     sent = kpi.get("sent", 0)
@@ -148,6 +152,11 @@ def main() -> None:
             "failed": kpi.get("failed", 0),
             "pending": kpi.get("pending", 0),
             "reply_rate": reply_rate,
+        },
+        "sentiment": {
+            "positive": sentiment_counter.get("positive", 0),
+            "neutral": sentiment_counter.get("neutral", 0),
+            "negative": sentiment_counter.get("negative", 0),
         },
         "by_category": rows(by_category),
         "by_likelihood": rows(by_likelihood),

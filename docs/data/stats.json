@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:33:22.025992+00:00",
+  "generated_at": "2026-07-19T04:06:42.867538+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,11 +11,16 @@
   },
   "kpis": {
     "total": 66,
-    "sent": 61,
-    "replied": 5,
+    "sent": 66,
+    "replied": 0,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 8.2
+    "reply_rate": 0.0
+  },
+  "sentiment": {
+    "positive": 0,
+    "neutral": 0,
+    "negative": 0
   },
   "by_category": [
     {
@@ -29,24 +34,24 @@
     {
       "label": "Nonalcoholic",
       "total": 11,
-      "sent": 8,
-      "replied": 3,
+      "sent": 11,
+      "replied": 0,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "RTD",
       "total": 9,
-      "sent": 8,
-      "replied": 1,
+      "sent": 9,
+      "replied": 0,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Mixer",
       "total": 7,
-      "sent": 6,
-      "replied": 1,
+      "sent": 7,
+      "replied": 0,
       "pending": 0,
       "failed": 0
     },
@@ -143,16 +148,16 @@
     {
       "label": "High",
       "total": 46,
-      "sent": 43,
-      "replied": 3,
+      "sent": 46,
+      "replied": 0,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Medium",
       "total": 20,
-      "sent": 18,
-      "replied": 2,
+      "sent": 20,
+      "replied": 0,
       "pending": 0,
       "failed": 0
     }
@@ -212,17 +217,12 @@
       "date": "2026-07-18",
       "sent": 66,
       "replies": 0
-    },
-    {
-      "date": "2026-07-19",
-      "sent": 0,
-      "replies": 5
     }
   ],
   "funnel": {
     "prospects": 66,
-    "sent": 61,
-    "replied": 5
+    "sent": 66,
+    "replied": 0
   },
   "companies": [
     {
@@ -246,7 +246,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "pernod-ricard-usa",
@@ -269,7 +271,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "brown-forman",
@@ -292,7 +296,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "campari-america",
@@ -315,7 +321,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "william-grant-sons",
@@ -338,7 +346,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "heaven-hill-brands",
@@ -361,7 +371,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "sazerac",
@@ -384,7 +396,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "mast-jagermeister-us",
@@ -407,7 +421,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "stoli-group",
@@ -430,7 +446,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "hotaling-co",
@@ -453,7 +471,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "uncle-nearest",
@@ -476,7 +496,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "fever-tree-usa",
@@ -499,7 +521,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "q-mixers",
@@ -522,7 +546,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "monin-americas",
@@ -545,7 +571,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "libbey",
@@ -568,7 +596,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "true-brands",
@@ -591,7 +621,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "fee-brothers",
@@ -614,7 +646,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "bittermens",
@@ -637,7 +671,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "bittercube",
@@ -660,7 +696,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "scrappys-bitters",
@@ -683,7 +721,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "peychauds",
@@ -706,7 +746,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "regans-orange-bitters",
@@ -729,7 +771,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "liber-co",
@@ -752,7 +796,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "small-hand-foods",
@@ -775,7 +821,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "bg-reynolds",
@@ -798,7 +846,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "liquid-alchemist",
@@ -821,7 +871,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "proof-syrup",
@@ -844,7 +896,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "bittermilk",
@@ -867,7 +921,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "withco-cocktails",
@@ -890,7 +946,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "owens-craft-mixers",
@@ -913,7 +971,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "east-imperial",
@@ -936,7 +996,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "thomas-henry",
@@ -947,7 +1009,7 @@
       "likelihood": "Medium",
       "best_ask": "Product",
       "email": "hello@thomas-henry.com",
-      "status": "replied",
+      "status": "sent",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://www.thomas-henry.com/contact/",
@@ -956,10 +1018,12 @@
       "message_id": "<178441197402.55547.987701327372473758@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:59:36.747842+00:00",
-      "reply_count": 1,
-      "reply_from": "postmaster@thomas-henry.de",
-      "reply_subject": "Undeliverable: Inviting Thomas Henry to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-19T02:33:21.952450+00:00"
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "liquid-death",
@@ -982,7 +1046,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "recess",
@@ -1005,7 +1071,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "ghia",
@@ -1028,7 +1096,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "seedlip",
@@ -1051,7 +1121,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "lyres",
@@ -1062,7 +1134,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof bar",
       "email": "hello@lyres.com",
-      "status": "replied",
+      "status": "sent",
       "contact_route": "Official contact/wholesale route",
       "phone": "Not listed",
       "source_url": "https://lyres.com/pages/contact-us",
@@ -1071,10 +1143,12 @@
       "message_id": "<178441202993.55547.7176622357328955331@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:00:32.843795+00:00",
-      "reply_count": 1,
-      "reply_from": "hello@lyres.com",
-      "reply_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-19T02:33:21.952409+00:00"
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "ritual-zero-proof",
@@ -1097,7 +1171,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "monday-gin",
@@ -1108,7 +1184,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof station",
       "email": "hello@drinkmonday.co",
-      "status": "replied",
+      "status": "sent",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://drinkmonday.co/pages/contact-us",
@@ -1117,10 +1193,12 @@
       "message_id": "<178441205214.55547.18117754634470294252@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:00:57.297222+00:00",
-      "reply_count": 1,
-      "reply_from": "hello@drinkmonday.co",
-      "reply_subject": "Inviting Monday Gin to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-19T02:33:21.952438+00:00"
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "dhos",
@@ -1143,7 +1221,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "aplos",
@@ -1154,7 +1234,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof activation",
       "email": "hello@aplos.world",
-      "status": "replied",
+      "status": "sent",
       "contact_route": "General contact",
       "phone": "Not listed",
       "source_url": "https://aplos.world/pages/contact",
@@ -1163,10 +1243,12 @@
       "message_id": "<178441207945.55547.15209701240677260973@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:01:26.042929+00:00",
-      "reply_count": 1,
-      "reply_from": "hello@aplos.world",
-      "reply_subject": "Re: Inviting Aplós to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-19T02:33:21.952445+00:00"
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "casamara-club",
@@ -1189,7 +1271,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "curious-elixirs",
@@ -1212,7 +1296,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "de-soi",
@@ -1235,7 +1321,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "tip-top-proper-cocktails",
@@ -1258,7 +1346,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "social-hour-cocktails",
@@ -1281,7 +1371,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "post-meridiem",
@@ -1304,7 +1396,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "livewire-drinks",
@@ -1327,7 +1421,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "two-chicks-cocktails",
@@ -1350,7 +1446,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "onda",
@@ -1373,7 +1471,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "volley-tequila-seltzer",
@@ -1396,7 +1496,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "loverboy",
@@ -1407,7 +1509,7 @@
       "likelihood": "Medium",
       "best_ask": "Product; sampling",
       "email": "hello@drinkloverboy.com",
-      "status": "replied",
+      "status": "sent",
       "contact_route": "Official contact",
       "phone": "Not listed",
       "source_url": "https://drinkloverboy.com/pages/contact-us",
@@ -1416,10 +1518,12 @@
       "message_id": "<178441221661.55547.16583985866886573229@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:03:39.374919+00:00",
-      "reply_count": 1,
-      "reply_from": "hello@drinkloverboy.com",
-      "reply_subject": "Thanks for Contacting Loverboy - Message Received Re: Inviting\r\n Loverboy to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-19T02:33:21.952456+00:00"
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "juneshine",
@@ -1442,7 +1546,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "haus",
@@ -1465,7 +1571,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "italicus",
@@ -1488,7 +1596,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "giffard-usa",
@@ -1511,7 +1621,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "luxardo",
@@ -1534,7 +1646,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "tempus-fugit-spirits",
@@ -1557,7 +1671,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "pierre-ferrand-maison-ferrand",
@@ -1580,7 +1696,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "laird-company",
@@ -1603,7 +1721,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "novo-fogo",
@@ -1626,7 +1746,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "avua-cachaca",
@@ -1649,7 +1771,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "hamilton-rum",
@@ -1672,7 +1796,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "appleton-estate",
@@ -1695,7 +1821,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "mijenta-tequila",
@@ -1718,7 +1846,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     },
     {
       "id": "codigo-1530",
@@ -1741,7 +1871,9 @@
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",
-      "reply_at": ""
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
     }
   ]
 }
