@@ -7,7 +7,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
-    "last_reply_at": "2026-07-20T14:58:27.421238+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.018830+00:00",
     "last_from": "hello@lyres.com",
     "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
   },
@@ -15,11 +15,11 @@
     "id": "fabrizia-spirits",
     "company": "Fabrizia Spirits",
     "status": "replied",
-    "reply_count": 2,
+    "reply_count": 3,
     "sentiment": "positive",
-    "sentiment_score": 5,
+    "sentiment_score": 9,
     "first_reply_at": "2026-07-20T13:31:36.333531+00:00",
-    "last_reply_at": "2026-07-20T14:58:27.421773+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019022+00:00",
     "last_from": "alanna@fabriziaspirits.com",
     "last_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)"
   },
@@ -31,7 +31,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214230+00:00",
-    "last_reply_at": "2026-07-20T14:58:27.421814+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019068+00:00",
     "last_from": "info@caledoniaspirits.com",
     "last_subject": "unsubscribe"
   },
@@ -43,7 +43,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214348+00:00",
-    "last_reply_at": "2026-07-20T14:58:27.421957+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019237+00:00",
     "last_from": "info@athleticbrewing.com",
     "last_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)"
   },
@@ -55,8 +55,32 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T14:58:27.422007+00:00",
-    "last_reply_at": "2026-07-20T14:58:27.422010+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019312+00:00",
     "last_from": "lifted@littlesaints.com",
     "last_subject": "Re: Inviting Little Saints to Sips and Sushi (Aug 22, NYC)"
+  },
+  "taconic-distillery": {
+    "id": "taconic-distillery",
+    "company": "Taconic Distillery",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-20T16:08:58.019363+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019367+00:00",
+    "last_from": "pjc@taconicdistillery.com",
+    "last_subject": "Re: Inviting Taconic Distillery to Sips and Sushi (Aug 22, NYC)"
+  },
+  "one-woman-wines": {
+    "id": "one-woman-wines",
+    "company": "One Woman Wines",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "positive",
+    "sentiment_score": 5,
+    "first_reply_at": "2026-07-20T16:08:58.019455+00:00",
+    "last_reply_at": "2026-07-20T16:08:58.019459+00:00",
+    "last_from": "gabriella@onewomanwines.com",
+    "last_subject": "Re: Inviting One Woman Wines to Sips and Sushi (Aug 22, NYC)"
   }
 }
