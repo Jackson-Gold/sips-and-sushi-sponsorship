@@ -93,8 +93,9 @@ async function onRefresh() {
   let token = localStorage.getItem("gh_pat") || "";
   if (!token) {
     token = (window.prompt(
-      "To scan your inbox for new replies, paste a GitHub token with " +
-      "'Actions: read and write' permission on this repo. It is stored only in " +
+      "Scan your inbox for new replies?\n\n" +
+      "Paste a GitHub fine-grained token with 'Actions: Read and write' on this " +
+      "repo (github.com/settings/personal-access-tokens/new). It is stored only in " +
       "this browser.\n\nLeave blank to just reload the latest saved data."
     ) || "").trim();
     if (token) localStorage.setItem("gh_pat", token);
@@ -104,14 +105,21 @@ async function onRefresh() {
   try {
     if (token) {
       await runTracker(token);
+      setRefreshStatus("Updated with the latest inbox scan.");
+    } else {
+      await loadAndRender();
+      setRefreshStatus("Reloaded saved data. Add a token to scan your inbox on demand.");
+      return;
     }
-    setRefreshStatus("Updating…");
     await loadAndRender();
-    setRefreshStatus("");
   } catch (err) {
-    setRefreshStatus("");
     await loadAndRender();
-    window.alert(`Could not run the inbox scan: ${err.message}\nReloaded the latest saved data instead.`);
+    setRefreshStatus(`Scan failed: ${err.message}`);
+    window.alert(
+      `Could not run the inbox scan:\n${err.message}\n\n` +
+      `Reloaded the latest saved data instead. The dashboard also updates ` +
+      `automatically every 6 hours.`
+    );
   } finally {
     setTimeout(() => btn.classList.remove("loading"), 400);
   }
@@ -124,6 +132,21 @@ async function runTracker(token) {
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
   };
+
+  setRefreshStatus("Checking access…");
+  // Validate the token can see this repo's Actions before dispatching.
+  const check = await fetch(`${base}/actions/workflows/${TRACK_WORKFLOW}`, { headers });
+  if (check.status === 401) {
+    localStorage.removeItem("gh_pat");
+    throw new Error("Token invalid or expired. Click Refresh again to enter a new one.");
+  }
+  if (check.status === 404) {
+    localStorage.removeItem("gh_pat");
+    throw new Error("Token can't see this repo. Give it access to Jackson-Gold/sips-and-sushi-sponsorship with 'Actions: Read and write'.");
+  }
+  if (!check.ok) {
+    throw new Error(`GitHub API error (HTTP ${check.status}).`);
+  }
 
   setRefreshStatus("Starting inbox scan…");
   const prevGenerated = LAST_GENERATED_AT;

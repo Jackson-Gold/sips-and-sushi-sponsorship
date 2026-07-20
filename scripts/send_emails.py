@@ -43,6 +43,41 @@ def load_logo() -> bytes | None:
     return logo_path.read_bytes() if logo_path.exists() else None
 
 
+def connect_smtp() -> smtplib.SMTP:
+    smtp = smtplib.SMTP(config.SMTP_HOST, config.SMTP_PORT, timeout=60)
+    smtp.ehlo()
+    smtp.starttls()
+    smtp.login(config.SMTP_USER, config.SMTP_PASS)
+    return smtp
+
+
+def ensure_alive(smtp: smtplib.SMTP) -> smtplib.SMTP:
+    """Return a live SMTP connection, reconnecting if the current one dropped."""
+    try:
+        if smtp is not None and smtp.noop()[0] == 250:
+            return smtp
+    except Exception:  # noqa: BLE001
+        pass
+    try:
+        if smtp is not None:
+            smtp.close()
+    except Exception:  # noqa: BLE001
+        pass
+    return connect_smtp()
+
+
+def send_with_retry(smtp: smtplib.SMTP, msg) -> smtplib.SMTP:
+    """Send a message, reconnecting once on a dropped connection."""
+    smtp = ensure_alive(smtp)
+    try:
+        smtp.send_message(msg)
+        return smtp
+    except smtplib.SMTPServerDisconnected:
+        smtp = connect_smtp()
+        smtp.send_message(msg)
+        return smtp
+
+
 def make_email(prospect: dict, message_id: str, logo_bytes: bytes | None) -> tuple[EmailMessage, str]:
     """Build the tailored email for a prospect. Returns (message, subject)."""
     subject = email_content.build_subject(prospect)
@@ -106,9 +141,7 @@ def main() -> None:
 
     smtp = None
     if live:
-        smtp = smtplib.SMTP(config.SMTP_HOST, config.SMTP_PORT, timeout=30)
-        smtp.starttls()
-        smtp.login(config.SMTP_USER, config.SMTP_PASS)
+        smtp = connect_smtp()
 
     sent_count = 0
     try:
@@ -144,7 +177,7 @@ def main() -> None:
                 del msg["To"]
                 msg["To"] = test_to
                 try:
-                    smtp.send_message(msg)
+                    smtp = send_with_retry(smtp, msg)
                     print(f"[test] {pid} rendered -> delivered to {test_to} (not logged)")
                     sent_count += 1
                     time.sleep(config.SEND_THROTTLE_SECONDS)
@@ -173,7 +206,7 @@ def main() -> None:
                 sent_count += 1
             else:
                 try:
-                    smtp.send_message(msg)
+                    smtp = send_with_retry(smtp, msg)
                     sends[pid] = {
                         "id": pid,
                         "company": prospect["company"],
@@ -205,7 +238,10 @@ def main() -> None:
                 break
     finally:
         if smtp is not None:
-            smtp.quit()
+            try:
+                smtp.quit()
+            except Exception:  # noqa: BLE001
+                pass
         save_json(config.SENDS_JSON, sends)
 
     mode = "previews written" if args.dry_run else "emails sent"
