@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:14:27.779084+00:00",
+  "generated_at": "2026-07-20T18:34:30.746126+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,14 +11,14 @@
   },
   "kpis": {
     "total": 202,
-    "sent": 191,
-    "replied": 11,
+    "sent": 190,
+    "replied": 12,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 5.8
+    "reply_rate": 6.3
   },
   "sentiment": {
-    "positive": 5,
+    "positive": 6,
     "neutral": 6,
     "negative": 0
   },
@@ -138,8 +138,8 @@
     {
       "label": "Sake",
       "total": 4,
-      "sent": 4,
-      "replied": 0,
+      "sent": 3,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 141,
-      "sent": 132,
-      "replied": 9,
+      "sent": 131,
+      "replied": 10,
       "pending": 0,
       "failed": 0
     },
@@ -341,13 +341,13 @@
     {
       "date": "2026-07-20",
       "sent": 136,
-      "replies": 11
+      "replies": 12
     }
   ],
   "funnel": {
     "prospects": 202,
-    "sent": 191,
-    "replied": 11
+    "sent": 190,
+    "replied": 12
   },
   "companies": [
     {
@@ -3818,7 +3818,7 @@
       "message_id": "<178456298127.27190.13648597719420434618@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T15:56:36.219875+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "membership@greenbrierdistillery.com",
       "reply_subject": "Re: Inviting Nelson's Green Brier to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T16:54:06.618413+00:00",
@@ -4284,7 +4284,7 @@
       "likelihood": "High",
       "best_ask": "Product; sake pairing with sushi",
       "email": "info@brooklynkura.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -4293,12 +4293,12 @@
       "message_id": "<178456317992.27190.5319758068002402166@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T15:59:41.184262+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "alex@brooklynkura.com",
+      "reply_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-20T18:34:30.665550+00:00",
+      "sentiment": "positive",
+      "sentiment_score": 5
     },
     {
       "id": "tippsy-sake",
