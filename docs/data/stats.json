@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:33:53.102316+00:00",
+  "generated_at": "2026-07-20T13:53:25.294172+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "total": 125,
-    "sent": 123,
-    "replied": 2,
+    "sent": 121,
+    "replied": 4,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 1.6
+    "reply_rate": 3.3
   },
   "sentiment": {
     "positive": 1,
-    "neutral": 1,
+    "neutral": 3,
     "negative": 0
   },
   "by_category": [
@@ -114,8 +114,8 @@
     {
       "label": "Nonalcoholic beer",
       "total": 2,
-      "sent": 2,
-      "replied": 0,
+      "sent": 1,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -130,8 +130,8 @@
     {
       "label": "Gin",
       "total": 2,
-      "sent": 2,
-      "replied": 0,
+      "sent": 1,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -236,16 +236,16 @@
     {
       "label": "High",
       "total": 90,
-      "sent": 88,
-      "replied": 2,
+      "sent": 87,
+      "replied": 3,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Medium",
       "total": 35,
-      "sent": 35,
-      "replied": 0,
+      "sent": 34,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     }
@@ -309,13 +309,13 @@
     {
       "date": "2026-07-20",
       "sent": 59,
-      "replies": 2
+      "replies": 4
     }
   ],
   "funnel": {
     "prospects": 125,
-    "sent": 123,
-    "replied": 2
+    "sent": 121,
+    "replied": 4
   },
   "companies": [
     {
@@ -1527,7 +1527,7 @@
       "likelihood": "Medium",
       "best_ask": "Product; hydration/beer option",
       "email": "info@athleticbrewing.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Donations/sponsorship request form",
       "phone": "Not listed",
       "source_url": "https://athleticbrewing.com/pages/donation-request",
@@ -1536,11 +1536,11 @@
       "message_id": "<178455354365.74945.8821301539796035247@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:19:06.795579+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "info@athleticbrewing.com",
+      "reply_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-20T13:53:25.214348+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {
@@ -2627,7 +2627,7 @@
       "likelihood": "High",
       "best_ask": "Product; honey-forward cocktail activation",
       "email": "info@caledoniaspirits.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2636,11 +2636,11 @@
       "message_id": "<178455377912.74945.10790468836330729878@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:23:01.906437+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "info@caledoniaspirits.com",
+      "reply_subject": "unsubscribe",
+      "reply_at": "2026-07-20T13:53:25.214230+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {

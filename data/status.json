@@ -7,7 +7,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
-    "last_reply_at": "2026-07-20T13:33:53.025725+00:00",
+    "last_reply_at": "2026-07-20T13:53:25.213890+00:00",
     "last_from": "hello@lyres.com",
     "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
   },
@@ -19,8 +19,32 @@
     "sentiment": "positive",
     "sentiment_score": 2,
     "first_reply_at": "2026-07-20T13:31:36.333531+00:00",
-    "last_reply_at": "2026-07-20T13:33:53.026074+00:00",
+    "last_reply_at": "2026-07-20T13:53:25.214204+00:00",
     "last_from": "alanna@fabriziaspirits.com",
     "last_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)"
+  },
+  "barr-hill": {
+    "id": "barr-hill",
+    "company": "Barr Hill",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-20T13:53:25.214230+00:00",
+    "last_reply_at": "2026-07-20T13:53:25.214232+00:00",
+    "last_from": "info@caledoniaspirits.com",
+    "last_subject": "unsubscribe"
+  },
+  "athletic-brewing": {
+    "id": "athletic-brewing",
+    "company": "Athletic Brewing",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-20T13:53:25.214348+00:00",
+    "last_reply_at": "2026-07-20T13:53:25.214350+00:00",
+    "last_from": "info@athleticbrewing.com",
+    "last_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)"
   }
 }
