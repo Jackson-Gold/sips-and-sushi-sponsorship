@@ -769,19 +769,81 @@ TAILORING: dict[str, dict[str, str]] = {
 }
 
 
+# Category-aware serve / audience / ask so researched prospects still read tailored.
+_CAT = {
+    "Whiskey": ("building a rich old fashioned with your whiskey",
+                "whiskey lovers, cocktail enthusiasts, and hospitality professionals",
+                "a few bottles for the bartenders and a tasting for guests"),
+    "Spirits": ("building a signature cocktail around your spirits",
+                "cocktail enthusiasts, bartenders, and hospitality professionals",
+                "a few bottles for the bartenders, plus a tasting for guests"),
+    "Gin": ("building a crisp gin and tonic or a martini with your gin",
+            "cocktail enthusiasts, bartenders, and hospitality professionals",
+            "a few bottles for the bartenders and a gin cocktail activation"),
+    "Vodka": ("shaking a clean martini or a mule with your vodka",
+              "cocktail enthusiasts, bartenders, and hospitality professionals",
+              "a few bottles for the bartenders, plus any branded touches"),
+    "Rum": ("building a daiquiri or a tiki-style pour with your rum",
+            "cocktail enthusiasts, tiki lovers, and hospitality professionals",
+            "a few bottles for the bartenders and a rum education moment"),
+    "Tequila": ("building a fresh margarita or paloma with your tequila",
+                "tequila lovers, cocktail enthusiasts, and hospitality professionals",
+                "a few bottles for the bartenders and a margarita activation"),
+    "Mezcal": ("building a smoky, agave-forward cocktail with your mezcal",
+               "agave enthusiasts, bartenders, and hospitality professionals",
+               "a few bottles for the bartenders and an agave education moment"),
+    "Wine": ("pouring your wine and building a bright spritz",
+             "wine and cocktail enthusiasts, and hospitality professionals",
+             "a few bottles for a wine pour or spritz activation, plus a local tie-in"),
+    "Sparkling wine": ("pouring your sparkling as a welcome toast and spritz base",
+                       "wine and cocktail enthusiasts, and hospitality professionals",
+                       "a few cases for a sparkling welcome pour and spritzes"),
+    "Sake": ("pouring your sake as a natural companion to the meal",
+             "sake lovers, cocktail enthusiasts, and hospitality professionals",
+             "a few bottles for a dedicated sake-and-sushi pairing"),
+    "Beer": ("pouring your beer as a crisp, sessionable option",
+             "beer lovers, cocktail enthusiasts, and hospitality professionals",
+             "a few cases for a craft beer station"),
+    "Cider": ("pouring your cider as a crisp, refreshing option",
+              "cider and cocktail enthusiasts, and hospitality professionals",
+              "a few cases for a craft cider pour"),
+    "Nonalcoholic": ("building a bright zero-proof cocktail with your range",
+                     "cocktail enthusiasts, wellness-minded guests, and a growing sober-curious crowd",
+                     "a few bottles for a dedicated zero-proof activation"),
+    "RTD": ("serving your canned cocktails as fast, quality pours between sushi courses",
+            "cocktail enthusiasts, younger professionals, and hospitality professionals",
+            "a few cases for sampling at the bar"),
+    "Mixer": ("building crisp highballs with your mixers",
+              "bartenders, cocktail enthusiasts, and hospitality professionals",
+              "a few cases for a mixer station"),
+    "Syrups": ("building bright, balanced cocktails with your syrups",
+               "bartenders, cocktail enthusiasts, and hospitality professionals",
+               "a selection of syrups for the bartenders and a menu collaboration"),
+    "Bitters": ("finishing drinks with your bitters for real aromatic depth",
+                "bartenders, cocktail enthusiasts, and hospitality professionals",
+                "an assortment of bitters for a bitters station"),
+    "Glassware": ("serving every signature cocktail in your glassware",
+                  "cocktail enthusiasts, bartenders, and hospitality professionals",
+                  "event glassware for the bar, and we'd feature you as our glassware partner"),
+    "Barware": ("working with your bar tools all night",
+                "cocktail enthusiasts, bartenders, and hospitality professionals",
+                "branded bar tools for the bartenders and a few giveaways for guests"),
+}
+
+
 def _fallback(prospect: dict) -> dict:
-    brand = (prospect.get("brands", "").split(";")[0].strip()
-             or prospect.get("company", "your brand"))
-    return {
-        "brand": prospect.get("company", brand),
-        "hook": (f"I've been an admirer of {prospect.get('company', 'your brand')} for a "
-                 f"while, and I'd love to feature it this year. I can already picture one "
-                 f"of the bartenders building a signature cocktail around **{brand}** - "
-                 f"the kind of well-made drink that pairs beautifully with fresh sushi."),
-        "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
-        "ask": ("a few bottles for the bartenders to work with, plus any branded touches "
-                "you'd like guests to experience"),
-    }
+    company = prospect.get("company", "your brand")
+    serve, audience, ask = _CAT.get(
+        prospect.get("category", ""),
+        ("building a signature cocktail around your product",
+         "cocktail enthusiasts, bartenders, and hospitality professionals",
+         "a few bottles for the bartenders, plus any branded touches you'd like guests to experience"),
+    )
+    hook = (f"I've been a fan of **{company}** for a while, and I'd love to feature you this "
+            f"year. I can already picture one of our bartenders {serve} \u2014 the kind of "
+            f"thoughtfully made drink our guests get excited about, and a natural alongside "
+            f"a night of fresh sushi.")
+    return {"brand": company, "hook": hook, "audience": audience, "ask": ask}
 
 
 def _short_date() -> str:

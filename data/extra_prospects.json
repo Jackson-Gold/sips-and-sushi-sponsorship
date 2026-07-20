@@ -1,55 +1,1014 @@
 {
   "_note": "Additional prospects sourced via research (not in the original spreadsheet). Each has a public email verified from an official page or reputable listing. build_data.py appends these to the prospect list.",
   "prospects": [
-    {"company": "St. George Spirits", "brands": "Terroir Gin; Botanivore Gin; Baller Whiskey; Absinthe", "category": "Spirits", "likelihood": "High", "best_ask": "Product; craft distillery education", "public_email": "info@stgeorgespirits.com"},
-    {"company": "Kings County Distillery", "brands": "Bourbon; Peated Bourbon; Moonshine", "category": "Whiskey", "likelihood": "High", "best_ask": "Product; local Brooklyn tie-in; tasting", "public_email": "onlineorders@kingscountydistillery.com"},
-    {"company": "New York Distilling Co.", "brands": "Dorothy Parker Gin; Perry's Tot Gin; Ragtime Rye", "category": "Gin", "likelihood": "High", "best_ask": "Product; local NYC tie-in; bartender support", "public_email": "info@nydistilling.com"},
-    {"company": "St. Agrestis", "brands": "Inferno Bitter; Amaro; bottled Negroni", "category": "Aperitivo", "likelihood": "High", "best_ask": "Product; aperitivo activation", "public_email": "orders@stagrestis.com"},
-    {"company": "Forthave Spirits", "brands": "Red Aperitivo; Marseille Amaro; Blue Gin", "category": "Amaro", "likelihood": "High", "best_ask": "Product; aperitivo activation; local tie-in", "public_email": "forthave@forthavespirits.com"},
-    {"company": "Widow Jane", "brands": "Widow Jane Bourbon; Rye", "category": "Whiskey", "likelihood": "High", "best_ask": "Product; local Brooklyn tie-in; tasting", "public_email": "info@widowjane.com"},
-    {"company": "Leopold Bros", "brands": "Gin; Fernet; Aperitivo; Whiskey", "category": "Spirits", "likelihood": "High", "best_ask": "Product; education", "public_email": "sales@leopoldbros.com"},
-    {"company": "FEW Spirits", "brands": "Bourbon; Rye; American Gin", "category": "Whiskey", "likelihood": "High", "best_ask": "Product; tasting", "public_email": "info@fewspirits.com"},
-    {"company": "Copper & Kings", "brands": "American Brandy; Gin; Absinthe", "category": "Brandy", "likelihood": "High", "best_ask": "Product; education", "public_email": "info@copperandkings.com"},
-    {"company": "Cardinal Spirits", "brands": "Gin; Vodka; canned cocktails", "category": "Spirits", "likelihood": "High", "best_ask": "Product; canned cocktail sampling", "public_email": "hello@cardinalspirits.com"},
-    {"company": "Corsair Distillery", "brands": "Gin; Whiskey; experimental spirits", "category": "Whiskey", "likelihood": "High", "best_ask": "Product; education", "public_email": "info@corsairartisan.com"},
-    {"company": "Journeyman Distillery", "brands": "Whiskey; Gin; organic spirits", "category": "Whiskey", "likelihood": "Medium", "best_ask": "Product; tasting", "public_email": "reservations.valpo@journeyman.com"},
-    {"company": "Frey Ranch", "brands": "Farm-to-bottle Bourbon; Rye", "category": "Whiskey", "likelihood": "High", "best_ask": "Product; farm-to-bottle education", "public_email": "info@freyranch.com"},
-    {"company": "Tattersall Distilling", "brands": "Liqueurs; Gin; Aquavit", "category": "Liqueur", "likelihood": "High", "best_ask": "Product; education", "public_email": "brian@tattersalldistilling.com"},
-    {"company": "St. Augustine Distillery", "brands": "Gin; Bourbon; Vodka; Rum", "category": "Spirits", "likelihood": "High", "best_ask": "Product; tasting", "public_email": "amanda@staugustinedistillery.com"},
-    {"company": "Coppercraft Distillery", "brands": "Gin; Bourbon; RTD cocktails", "category": "Spirits", "likelihood": "Medium", "best_ask": "Product; sampling", "public_email": "press@coppercraftdistillery.com"},
-    {"company": "Cedar Ridge Distillery", "brands": "Iowa Bourbon; Whiskey", "category": "Whiskey", "likelihood": "Medium", "best_ask": "Product; tasting", "public_email": "info@crwine.com"},
-    {"company": "Barr Hill", "parent_company": "Caledonia Spirits", "brands": "Barr Hill Gin; Tom Cat Gin; Vodka", "category": "Gin", "likelihood": "High", "best_ask": "Product; honey-forward cocktail activation", "public_email": "info@caledoniaspirits.com"},
-    {"company": "Dulce Vida Spirits", "brands": "Organic Tequila; sparkling margaritas", "category": "Tequila", "likelihood": "High", "best_ask": "Product; margarita activation", "public_email": "info@dulcevidaspirits.com"},
-    {"company": "Tequila Tromba", "brands": "Blanco; Reposado; Anejo Tequila", "category": "Tequila", "likelihood": "High", "best_ask": "Product; bartender-led activation", "public_email": "katy.odonnell@tequilatromba.com"},
-    {"company": "You & Yours Distilling", "brands": "Vodka; Gin; canned cocktails", "category": "Spirits", "likelihood": "Medium", "best_ask": "Product; sampling", "public_email": "cheers@youandyours.com"},
-    {"company": "Fabrizia Spirits", "brands": "Limoncello; Italian lemon RTDs", "category": "Liqueur", "likelihood": "High", "best_ask": "Product; limoncello spritz activation", "public_email": "customerservice@fabriziaspirits.com"},
-    {"company": "Three Spirit", "brands": "Functional nonalcoholic elixirs", "category": "Nonalcoholic", "likelihood": "High", "best_ask": "Product; zero-proof activation", "public_email": "hello@threespiritdrinks.com"},
-    {"company": "Figlia", "brands": "Nonalcoholic aperitif", "category": "Nonalcoholic", "likelihood": "High", "best_ask": "Product; zero-proof aperitivo", "public_email": "allears@drinkfiglia.com"},
-    {"company": "Optimist Botanicals", "brands": "Nonalcoholic distilled botanicals", "category": "Nonalcoholic", "likelihood": "High", "best_ask": "Product; zero-proof bar", "public_email": "companysales@optimistdrinks.com"},
-    {"company": "Little Saints", "brands": "Nonalcoholic canned cocktails; botanicals", "category": "Nonalcoholic", "likelihood": "High", "best_ask": "Product; zero-proof activation", "public_email": "lifted@littlesaints.com"},
-    {"company": "Wildwonder", "brands": "Sparkling prebiotic sodas", "category": "Nonalcoholic", "likelihood": "Medium", "best_ask": "Product; zero-proof sampling", "public_email": "hello@drinkwildwonder.com"},
-    {"company": "Tost", "brands": "Tost sparkling nonalcoholic refresher", "category": "Nonalcoholic", "likelihood": "High", "best_ask": "Product; nonalcoholic toast moment", "public_email": "info@tostbeverages.com"},
-    {"company": "Best Day Brewing", "brands": "Nonalcoholic IPA; Kolsch; Hazy", "category": "Nonalcoholic beer", "likelihood": "High", "best_ask": "Product; nonalcoholic beer station", "public_email": "sales@bestdaybrewing.com"},
-    {"company": "Hella Cocktail Co.", "brands": "Bitters; tonic; mixers", "category": "Bitters", "likelihood": "High", "best_ask": "Product; local NYC tie-in; bitters station", "public_email": "hello@hellacocktail.co"},
-    {"company": "Jack Rudy Cocktail Co.", "brands": "Tonic; grenadine; vermouth", "category": "Mixer", "likelihood": "High", "best_ask": "Product; mixer station", "public_email": "info@jackrudycocktailco.com"},
-    {"company": "El Guapo Bitters", "brands": "Bitters; syrups; shrubs", "category": "Bitters", "likelihood": "High", "best_ask": "Product; bitters station", "public_email": "hello@elguapobitters.com"},
-    {"company": "Dashfire Bitters", "brands": "Bitters; bottled cocktails", "category": "Bitters", "likelihood": "High", "best_ask": "Product; bitters education", "public_email": "info@dashfire.us"},
-    {"company": "Crude Bitters", "brands": "Small-batch bitters", "category": "Bitters", "likelihood": "High", "best_ask": "Product; bitters station", "public_email": "lindsay@crudebitters.com"},
-    {"company": "18.21 Bitters", "brands": "Bitters; syrups; shrubs", "category": "Bitters", "likelihood": "High", "best_ask": "Product; syrup and bitters station", "public_email": "drink@1821bitters.com"},
-    {"company": "DRAM Apothecary", "brands": "Nonalcoholic bitters; sparkling waters", "category": "Bitters", "likelihood": "High", "best_ask": "Product; zero-proof bitters", "public_email": "info@dramapothecary.com"},
-    {"company": "Cocktail & Sons", "brands": "Cocktail syrups", "category": "Syrups", "likelihood": "High", "best_ask": "Product; menu collaboration", "public_email": "orders@cocktailandsons.com"},
-    {"company": "Morris Kitchen", "brands": "Syrups; ginger syrup", "category": "Syrups", "likelihood": "High", "best_ask": "Product; local Brooklyn tie-in", "public_email": "orders@morriskitchen.com"},
-    {"company": "Runamok", "brands": "Infused maple syrups", "category": "Syrups", "likelihood": "Medium", "best_ask": "Product; syrup collaboration", "public_email": "service1@runamok.com"},
-    {"company": "Portland Syrups", "brands": "Cocktail syrups; tonic syrup", "category": "Syrups", "likelihood": "Medium", "best_ask": "Product; sampling", "public_email": "sales@portlandsoda.com"},
-    {"company": "Cocktail Kingdom", "brands": "Bar tools; glassware; barware", "category": "Barware", "likelihood": "High", "best_ask": "Branded bar tools; glassware; local NYC tie-in", "public_email": "info@cocktailkingdom.com"},
-    {"company": "Viski", "brands": "Glassware; bar tools", "category": "Barware", "likelihood": "High", "best_ask": "Glassware; bar tools; giveaways", "public_email": "help@viski.com"},
-    {"company": "W&P", "brands": "Barware; Carry On cocktail kits; syrups", "category": "Barware", "likelihood": "High", "best_ask": "Barware; giveaways", "public_email": "customerservice@wandp.com"},
-    {"company": "Filthy Foods", "brands": "Cocktail olives; cherries; garnishes", "category": "Garnish", "likelihood": "High", "best_ask": "Product; garnish supply", "public_email": "wecare@filthyfood.com"},
-    {"company": "Siponey", "brands": "Canned whiskey highball", "category": "RTD", "likelihood": "High", "best_ask": "Product; sampling", "public_email": "info@siponey.com"},
-    {"company": "Crafthouse Cocktails", "brands": "Bottled classic cocktails", "category": "RTD", "likelihood": "High", "best_ask": "Product; sampling", "public_email": "jen@crafthousecocktails.com"},
-    {"company": "Wolffer Estate", "brands": "Rose; sparkling; cider; No. 139 spirits", "category": "Wine", "likelihood": "High", "best_ask": "Product; local Long Island tie-in; spritz activation", "public_email": "info@wolffer.com"},
-    {"company": "Gruet Winery", "brands": "Methode champenoise sparkling wine", "category": "Sparkling wine", "likelihood": "High", "best_ask": "Product; sparkling welcome pour", "public_email": "info@gruetwinery.com"},
-    {"company": "Archer Roose", "brands": "Premium canned wine", "category": "Wine", "likelihood": "High", "best_ask": "Product; canned wine sampling", "public_email": "hello@archerroose.com"},
-    {"company": "Maker Wine", "brands": "Craft canned wine", "category": "Wine", "likelihood": "High", "best_ask": "Product; canned wine sampling", "public_email": "hello@makerwine.com"}
+    {
+      "company": "St. George Spirits",
+      "brands": "Terroir Gin; Botanivore Gin; Baller Whiskey; Absinthe",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; craft distillery education",
+      "public_email": "info@stgeorgespirits.com"
+    },
+    {
+      "company": "Kings County Distillery",
+      "brands": "Bourbon; Peated Bourbon; Moonshine",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; local Brooklyn tie-in; tasting",
+      "public_email": "onlineorders@kingscountydistillery.com"
+    },
+    {
+      "company": "New York Distilling Co.",
+      "brands": "Dorothy Parker Gin; Perry's Tot Gin; Ragtime Rye",
+      "category": "Gin",
+      "likelihood": "High",
+      "best_ask": "Product; local NYC tie-in; bartender support",
+      "public_email": "info@nydistilling.com"
+    },
+    {
+      "company": "St. Agrestis",
+      "brands": "Inferno Bitter; Amaro; bottled Negroni",
+      "category": "Aperitivo",
+      "likelihood": "High",
+      "best_ask": "Product; aperitivo activation",
+      "public_email": "orders@stagrestis.com"
+    },
+    {
+      "company": "Forthave Spirits",
+      "brands": "Red Aperitivo; Marseille Amaro; Blue Gin",
+      "category": "Amaro",
+      "likelihood": "High",
+      "best_ask": "Product; aperitivo activation; local tie-in",
+      "public_email": "forthave@forthavespirits.com"
+    },
+    {
+      "company": "Widow Jane",
+      "brands": "Widow Jane Bourbon; Rye",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; local Brooklyn tie-in; tasting",
+      "public_email": "info@widowjane.com"
+    },
+    {
+      "company": "Leopold Bros",
+      "brands": "Gin; Fernet; Aperitivo; Whiskey",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; education",
+      "public_email": "sales@leopoldbros.com"
+    },
+    {
+      "company": "FEW Spirits",
+      "brands": "Bourbon; Rye; American Gin",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@fewspirits.com"
+    },
+    {
+      "company": "Copper & Kings",
+      "brands": "American Brandy; Gin; Absinthe",
+      "category": "Brandy",
+      "likelihood": "High",
+      "best_ask": "Product; education",
+      "public_email": "info@copperandkings.com"
+    },
+    {
+      "company": "Cardinal Spirits",
+      "brands": "Gin; Vodka; canned cocktails",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; canned cocktail sampling",
+      "public_email": "hello@cardinalspirits.com"
+    },
+    {
+      "company": "Corsair Distillery",
+      "brands": "Gin; Whiskey; experimental spirits",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; education",
+      "public_email": "info@corsairartisan.com"
+    },
+    {
+      "company": "Journeyman Distillery",
+      "brands": "Whiskey; Gin; organic spirits",
+      "category": "Whiskey",
+      "likelihood": "Medium",
+      "best_ask": "Product; tasting",
+      "public_email": "reservations.valpo@journeyman.com"
+    },
+    {
+      "company": "Frey Ranch",
+      "brands": "Farm-to-bottle Bourbon; Rye",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; farm-to-bottle education",
+      "public_email": "info@freyranch.com"
+    },
+    {
+      "company": "Tattersall Distilling",
+      "brands": "Liqueurs; Gin; Aquavit",
+      "category": "Liqueur",
+      "likelihood": "High",
+      "best_ask": "Product; education",
+      "public_email": "brian@tattersalldistilling.com"
+    },
+    {
+      "company": "St. Augustine Distillery",
+      "brands": "Gin; Bourbon; Vodka; Rum",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "amanda@staugustinedistillery.com"
+    },
+    {
+      "company": "Coppercraft Distillery",
+      "brands": "Gin; Bourbon; RTD cocktails",
+      "category": "Spirits",
+      "likelihood": "Medium",
+      "best_ask": "Product; sampling",
+      "public_email": "press@coppercraftdistillery.com"
+    },
+    {
+      "company": "Cedar Ridge Distillery",
+      "brands": "Iowa Bourbon; Whiskey",
+      "category": "Whiskey",
+      "likelihood": "Medium",
+      "best_ask": "Product; tasting",
+      "public_email": "info@crwine.com"
+    },
+    {
+      "company": "Barr Hill",
+      "parent_company": "Caledonia Spirits",
+      "brands": "Barr Hill Gin; Tom Cat Gin; Vodka",
+      "category": "Gin",
+      "likelihood": "High",
+      "best_ask": "Product; honey-forward cocktail activation",
+      "public_email": "info@caledoniaspirits.com"
+    },
+    {
+      "company": "Dulce Vida Spirits",
+      "brands": "Organic Tequila; sparkling margaritas",
+      "category": "Tequila",
+      "likelihood": "High",
+      "best_ask": "Product; margarita activation",
+      "public_email": "info@dulcevidaspirits.com"
+    },
+    {
+      "company": "Tequila Tromba",
+      "brands": "Blanco; Reposado; Anejo Tequila",
+      "category": "Tequila",
+      "likelihood": "High",
+      "best_ask": "Product; bartender-led activation",
+      "public_email": "katy.odonnell@tequilatromba.com"
+    },
+    {
+      "company": "You & Yours Distilling",
+      "brands": "Vodka; Gin; canned cocktails",
+      "category": "Spirits",
+      "likelihood": "Medium",
+      "best_ask": "Product; sampling",
+      "public_email": "cheers@youandyours.com"
+    },
+    {
+      "company": "Fabrizia Spirits",
+      "brands": "Limoncello; Italian lemon RTDs",
+      "category": "Liqueur",
+      "likelihood": "High",
+      "best_ask": "Product; limoncello spritz activation",
+      "public_email": "customerservice@fabriziaspirits.com"
+    },
+    {
+      "company": "Three Spirit",
+      "brands": "Functional nonalcoholic elixirs",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "hello@threespiritdrinks.com"
+    },
+    {
+      "company": "Figlia",
+      "brands": "Nonalcoholic aperitif",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof aperitivo",
+      "public_email": "allears@drinkfiglia.com"
+    },
+    {
+      "company": "Optimist Botanicals",
+      "brands": "Nonalcoholic distilled botanicals",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof bar",
+      "public_email": "companysales@optimistdrinks.com"
+    },
+    {
+      "company": "Little Saints",
+      "brands": "Nonalcoholic canned cocktails; botanicals",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "lifted@littlesaints.com"
+    },
+    {
+      "company": "Wildwonder",
+      "brands": "Sparkling prebiotic sodas",
+      "category": "Nonalcoholic",
+      "likelihood": "Medium",
+      "best_ask": "Product; zero-proof sampling",
+      "public_email": "hello@drinkwildwonder.com"
+    },
+    {
+      "company": "Tost",
+      "brands": "Tost sparkling nonalcoholic refresher",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; nonalcoholic toast moment",
+      "public_email": "info@tostbeverages.com"
+    },
+    {
+      "company": "Best Day Brewing",
+      "brands": "Nonalcoholic IPA; Kolsch; Hazy",
+      "category": "Nonalcoholic beer",
+      "likelihood": "High",
+      "best_ask": "Product; nonalcoholic beer station",
+      "public_email": "sales@bestdaybrewing.com"
+    },
+    {
+      "company": "Hella Cocktail Co.",
+      "brands": "Bitters; tonic; mixers",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; local NYC tie-in; bitters station",
+      "public_email": "hello@hellacocktail.co"
+    },
+    {
+      "company": "Jack Rudy Cocktail Co.",
+      "brands": "Tonic; grenadine; vermouth",
+      "category": "Mixer",
+      "likelihood": "High",
+      "best_ask": "Product; mixer station",
+      "public_email": "info@jackrudycocktailco.com"
+    },
+    {
+      "company": "El Guapo Bitters",
+      "brands": "Bitters; syrups; shrubs",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; bitters station",
+      "public_email": "hello@elguapobitters.com"
+    },
+    {
+      "company": "Dashfire Bitters",
+      "brands": "Bitters; bottled cocktails",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; bitters education",
+      "public_email": "info@dashfire.us"
+    },
+    {
+      "company": "Crude Bitters",
+      "brands": "Small-batch bitters",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; bitters station",
+      "public_email": "lindsay@crudebitters.com"
+    },
+    {
+      "company": "18.21 Bitters",
+      "brands": "Bitters; syrups; shrubs",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; syrup and bitters station",
+      "public_email": "drink@1821bitters.com"
+    },
+    {
+      "company": "DRAM Apothecary",
+      "brands": "Nonalcoholic bitters; sparkling waters",
+      "category": "Bitters",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof bitters",
+      "public_email": "info@dramapothecary.com"
+    },
+    {
+      "company": "Cocktail & Sons",
+      "brands": "Cocktail syrups",
+      "category": "Syrups",
+      "likelihood": "High",
+      "best_ask": "Product; menu collaboration",
+      "public_email": "orders@cocktailandsons.com"
+    },
+    {
+      "company": "Morris Kitchen",
+      "brands": "Syrups; ginger syrup",
+      "category": "Syrups",
+      "likelihood": "High",
+      "best_ask": "Product; local Brooklyn tie-in",
+      "public_email": "orders@morriskitchen.com"
+    },
+    {
+      "company": "Runamok",
+      "brands": "Infused maple syrups",
+      "category": "Syrups",
+      "likelihood": "Medium",
+      "best_ask": "Product; syrup collaboration",
+      "public_email": "service1@runamok.com"
+    },
+    {
+      "company": "Portland Syrups",
+      "brands": "Cocktail syrups; tonic syrup",
+      "category": "Syrups",
+      "likelihood": "Medium",
+      "best_ask": "Product; sampling",
+      "public_email": "sales@portlandsoda.com"
+    },
+    {
+      "company": "Cocktail Kingdom",
+      "brands": "Bar tools; glassware; barware",
+      "category": "Barware",
+      "likelihood": "High",
+      "best_ask": "Branded bar tools; glassware; local NYC tie-in",
+      "public_email": "info@cocktailkingdom.com"
+    },
+    {
+      "company": "Viski",
+      "brands": "Glassware; bar tools",
+      "category": "Barware",
+      "likelihood": "High",
+      "best_ask": "Glassware; bar tools; giveaways",
+      "public_email": "help@viski.com"
+    },
+    {
+      "company": "W&P",
+      "brands": "Barware; Carry On cocktail kits; syrups",
+      "category": "Barware",
+      "likelihood": "High",
+      "best_ask": "Barware; giveaways",
+      "public_email": "customerservice@wandp.com"
+    },
+    {
+      "company": "Filthy Foods",
+      "brands": "Cocktail olives; cherries; garnishes",
+      "category": "Garnish",
+      "likelihood": "High",
+      "best_ask": "Product; garnish supply",
+      "public_email": "wecare@filthyfood.com"
+    },
+    {
+      "company": "Siponey",
+      "brands": "Canned whiskey highball",
+      "category": "RTD",
+      "likelihood": "High",
+      "best_ask": "Product; sampling",
+      "public_email": "info@siponey.com"
+    },
+    {
+      "company": "Crafthouse Cocktails",
+      "brands": "Bottled classic cocktails",
+      "category": "RTD",
+      "likelihood": "High",
+      "best_ask": "Product; sampling",
+      "public_email": "jen@crafthousecocktails.com"
+    },
+    {
+      "company": "Wolffer Estate",
+      "brands": "Rose; sparkling; cider; No. 139 spirits",
+      "category": "Wine",
+      "likelihood": "High",
+      "best_ask": "Product; local Long Island tie-in; spritz activation",
+      "public_email": "info@wolffer.com"
+    },
+    {
+      "company": "Gruet Winery",
+      "brands": "Methode champenoise sparkling wine",
+      "category": "Sparkling wine",
+      "likelihood": "High",
+      "best_ask": "Product; sparkling welcome pour",
+      "public_email": "info@gruetwinery.com"
+    },
+    {
+      "company": "Archer Roose",
+      "brands": "Premium canned wine",
+      "category": "Wine",
+      "likelihood": "High",
+      "best_ask": "Product; canned wine sampling",
+      "public_email": "hello@archerroose.com"
+    },
+    {
+      "company": "Maker Wine",
+      "brands": "Craft canned wine",
+      "category": "Wine",
+      "likelihood": "High",
+      "best_ask": "Product; canned wine sampling",
+      "public_email": "hello@makerwine.com"
+    },
+    {
+      "company": "Bardstown Bourbon Company",
+      "brands": "Bardstown Bourbon Company",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "cboone@bardstownbourbon.com"
+    },
+    {
+      "company": "Channing Daughters",
+      "brands": "Channing Daughters",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@channingdaughters.com"
+    },
+    {
+      "company": "Chattanooga Whiskey",
+      "brands": "Chattanooga Whiskey",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@chattanoogawhiskey.com"
+    },
+    {
+      "company": "Cocktail Crate",
+      "brands": "Cocktail Crate",
+      "category": "Mixer",
+      "likelihood": "High",
+      "best_ask": "Product; mixer station",
+      "public_email": "info@cocktailcrate.com"
+    },
+    {
+      "company": "Finback Brewery",
+      "brands": "Finback Brewery",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@finbackbrewery.com"
+    },
+    {
+      "company": "Garrison Brothers",
+      "brands": "Garrison Brothers",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "sitandsip@garrisonbros.com"
+    },
+    {
+      "company": "Gray Whale Gin",
+      "brands": "Gray Whale Gin",
+      "category": "Gin",
+      "likelihood": "High",
+      "best_ask": "Product; gin cocktail activation",
+      "public_email": "hello@graywhalespirits.com"
+    },
+    {
+      "company": "Hudson Whiskey",
+      "brands": "Hudson Whiskey",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "hello@hudsonwhiskey.com"
+    },
+    {
+      "company": "Interboro Spirits and Ales",
+      "brands": "Interboro Spirits and Ales",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@interboro.nyc"
+    },
+    {
+      "company": "Joto Sake",
+      "brands": "Joto Sake",
+      "category": "Sake",
+      "likelihood": "High",
+      "best_ask": "Product; sake pairing with sushi",
+      "public_email": "info@jotosake.com"
+    },
+    {
+      "company": "Long Island Spirits",
+      "brands": "Long Island Spirits",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@lispirits.com"
+    },
+    {
+      "company": "Macari Vineyards",
+      "brands": "Macari Vineyards",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@macariwines.com"
+    },
+    {
+      "company": "Mocktail Club",
+      "brands": "Mocktail Club",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "info@mocktailclub.com"
+    },
+    {
+      "company": "Nelson's Green Brier",
+      "brands": "Nelson's Green Brier",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "membership@greenbrierdistillery.com"
+    },
+    {
+      "company": "New Riff Distilling",
+      "brands": "New Riff Distilling",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "club@newriffdistilling.com"
+    },
+    {
+      "company": "Papa's Pilar Rum",
+      "brands": "Papa's Pilar Rum",
+      "category": "Rum",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "heypapa@papaspilar.com"
+    },
+    {
+      "company": "Rabbit Hole Distillery",
+      "brands": "Rabbit Hole Distillery",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "dennis@rabbitholedistillery.com"
+    },
+    {
+      "company": "Red Hook Winery",
+      "brands": "Red Hook Winery",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "manager@redhookwinery.com"
+    },
+    {
+      "company": "Taconic Distillery",
+      "brands": "Taconic Distillery",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@taconicdistillery.com"
+    },
+    {
+      "company": "The Long Drink Company",
+      "brands": "The Long Drink Company",
+      "category": "RTD",
+      "likelihood": "High",
+      "best_ask": "Product; sampling",
+      "public_email": "info@thelongdrink.com"
+    },
+    {
+      "company": "Watershed Distillery",
+      "brands": "Watershed Distillery",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@watersheddistillery.com"
+    },
+    {
+      "company": "Yes Cocktail Co",
+      "brands": "Yes Cocktail Co",
+      "category": "Mixer",
+      "likelihood": "High",
+      "best_ask": "Product; mixer station",
+      "public_email": "info@yescocktailco.com"
+    },
+    {
+      "company": "Aviation Gin",
+      "brands": "Aviation Gin",
+      "category": "Gin",
+      "likelihood": "High",
+      "best_ask": "Product; gin cocktail activation",
+      "public_email": "aviation@diageo.com"
+    },
+    {
+      "company": "Barrell Craft Spirits",
+      "brands": "Barrell Craft Spirits",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "contact@barrellbourbon.com"
+    },
+    {
+      "company": "BEV Wine",
+      "brands": "BEV Wine",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "consumerrelations@bev.com"
+    },
+    {
+      "company": "Chopin Vodka",
+      "brands": "Chopin Vodka",
+      "category": "Vodka",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "hello@chopinvodka.com"
+    },
+    {
+      "company": "Holmes Cay Rum",
+      "brands": "Holmes Cay Rum",
+      "category": "Rum",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@holmescay.com"
+    },
+    {
+      "company": "Ironroot Republic",
+      "brands": "Ironroot Republic",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@ironrootrepublic.com"
+    },
+    {
+      "company": "Michter's",
+      "brands": "Michter's",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "fortnelson@michters.com"
+    },
+    {
+      "company": "Rooftop Reds",
+      "brands": "Rooftop Reds",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "events@rooftopreds.com"
+    },
+    {
+      "company": "Sloop Brewing",
+      "brands": "Sloop Brewing",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "thefactory@sloopbrewing.com"
+    },
+    {
+      "company": "Wilfred's Aperitif",
+      "brands": "Wilfred's Aperitif",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "chris@wilfredsdrinks.com"
+    },
+    {
+      "company": "Brooklyn Kura",
+      "brands": "Brooklyn Kura",
+      "category": "Sake",
+      "likelihood": "High",
+      "best_ask": "Product; sake pairing with sushi",
+      "public_email": "info@brooklynkura.com"
+    },
+    {
+      "company": "Tippsy Sake",
+      "brands": "Tippsy Sake",
+      "category": "Sake",
+      "likelihood": "High",
+      "best_ask": "Product; sake pairing with sushi",
+      "public_email": "tippsy@tippsysake.com"
+    },
+    {
+      "company": "SakeOne",
+      "brands": "SakeOne",
+      "category": "Sake",
+      "likelihood": "High",
+      "best_ask": "Product; sake pairing with sushi",
+      "public_email": "info@sakeone.com"
+    },
+    {
+      "company": "Wilderton",
+      "brands": "Wilderton",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "info@wildertonaperitivo.co"
+    },
+    {
+      "company": "Bedell Cellars",
+      "brands": "Bedell Cellars",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "wine@bedellcellars.com"
+    },
+    {
+      "company": "Black Dirt Distillery",
+      "brands": "Black Dirt Distillery",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@blackdirtdistillery.com"
+    },
+    {
+      "company": "Catskill Provisions",
+      "brands": "Catskill Provisions",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@pollinatorspirits.com"
+    },
+    {
+      "company": "Cotton & Reed",
+      "brands": "Cotton & Reed",
+      "category": "Rum",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@cottonandreed.com"
+    },
+    {
+      "company": "Dad's Hat Rye",
+      "brands": "Dad's Hat Rye",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@dadshatrye.com"
+    },
+    {
+      "company": "Demitri's",
+      "brands": "Demitri's",
+      "category": "Mixer",
+      "likelihood": "High",
+      "best_ask": "Product; mixer station",
+      "public_email": "info@demitris.com"
+    },
+    {
+      "company": "Denning's Point Distillery",
+      "brands": "Denning's Point Distillery",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "distiller@denningspoint.com"
+    },
+    {
+      "company": "Fifth Hammer Brewing",
+      "brands": "Fifth Hammer Brewing",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@fifthhammerbrewing.com"
+    },
+    {
+      "company": "Hillrock Estate Distillery",
+      "brands": "Hillrock Estate Distillery",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "cfranklin@hillrockdistillery.com"
+    },
+    {
+      "company": "JoyJolt",
+      "brands": "JoyJolt",
+      "category": "Glassware",
+      "likelihood": "High",
+      "best_ask": "Glassware; custom event supply",
+      "public_email": "info@joyjolt.com"
+    },
+    {
+      "company": "Lieb Cellars",
+      "brands": "Lieb Cellars",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@suhruliebvineyards.com"
+    },
+    {
+      "company": "Lyon Rum",
+      "brands": "Lyon Rum",
+      "category": "Rum",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "hello@lyonrum.com"
+    },
+    {
+      "company": "McClintock Distilling",
+      "brands": "McClintock Distilling",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@mcclintockdistilling.com"
+    },
+    {
+      "company": "Mingle Mocktails",
+      "brands": "Mingle Mocktails",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "help@minglemocktails.com"
+    },
+    {
+      "company": "Nine Pin Cider",
+      "brands": "Nine Pin Cider",
+      "category": "Cider",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft cider pour",
+      "public_email": "gerry@ninepincider.com"
+    },
+    {
+      "company": "Old Line Spirits",
+      "brands": "Old Line Spirits",
+      "category": "Whiskey",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@oldlinespirits.com"
+    },
+    {
+      "company": "One Eight Distilling",
+      "brands": "One Eight Distilling",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@oneeightdistilling.com"
+    },
+    {
+      "company": "Paumanok Vineyards",
+      "brands": "Paumanok Vineyards",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@paumanok.com"
+    },
+    {
+      "company": "Poppi",
+      "brands": "Poppi",
+      "category": "Nonalcoholic",
+      "likelihood": "High",
+      "best_ask": "Product; zero-proof activation",
+      "public_email": "hello@drinkpoppi.com"
+    },
+    {
+      "company": "Ramona",
+      "brands": "Ramona",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "hello@drinkramona.com"
+    },
+    {
+      "company": "Sparkling Pointe",
+      "brands": "Sparkling Pointe",
+      "category": "Sparkling wine",
+      "likelihood": "High",
+      "best_ask": "Product; sparkling welcome pour",
+      "public_email": "info@sparklingpointe.com"
+    },
+    {
+      "company": "Strong Rope Brewery",
+      "brands": "Strong Rope Brewery",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "hello@strongropebrewery.com"
+    },
+    {
+      "company": "Transmitter Brewing",
+      "brands": "Transmitter Brewing",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@transmitterbrewing.com"
+    },
+    {
+      "company": "Brooklyn Gin",
+      "brands": "Brooklyn Gin",
+      "category": "Gin",
+      "likelihood": "High",
+      "best_ask": "Product; gin cocktail activation",
+      "public_email": "info@brooklyngin.com"
+    },
+    {
+      "company": "Jamesport Vineyards",
+      "brands": "Jamesport Vineyards",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "brianne@jamesportwines.com"
+    },
+    {
+      "company": "Kontokosta Winery",
+      "brands": "Kontokosta Winery",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@kontokostawinery.com"
+    },
+    {
+      "company": "Lunar Hard Seltzer",
+      "brands": "Lunar Hard Seltzer",
+      "category": "RTD",
+      "likelihood": "High",
+      "best_ask": "Product; sampling",
+      "public_email": "hi@drinklunar.com"
+    },
+    {
+      "company": "Madre Mezcal",
+      "brands": "Madre Mezcal",
+      "category": "Mezcal",
+      "likelihood": "High",
+      "best_ask": "Product; agave education",
+      "public_email": "info@madremezcal.com"
+    },
+    {
+      "company": "One Woman Wines",
+      "brands": "One Woman Wines",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@onewomanwines.com"
+    },
+    {
+      "company": "Orange County Distillery",
+      "brands": "Orange County Distillery",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@orangecountydistillery.com"
+    },
+    {
+      "company": "Talea Beer Co",
+      "brands": "Talea Beer Co",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "andy@taleabeer.com"
+    },
+    {
+      "company": "Yankee Distillers",
+      "brands": "Yankee Distillers",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "info@yankeedistillers.com"
+    },
+    {
+      "company": "Barrier Brewing",
+      "brands": "Barrier Brewing",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@barrierbrewing.com"
+    },
+    {
+      "company": "Clovis Point",
+      "brands": "Clovis Point",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "info@clovispointwines.com"
+    },
+    {
+      "company": "Crown Maple",
+      "brands": "Crown Maple",
+      "category": "Syrups",
+      "likelihood": "High",
+      "best_ask": "Product; syrup and cocktail collaboration",
+      "public_email": "corporategift@crownmaple.com"
+    },
+    {
+      "company": "Greenport Harbor Brewing",
+      "brands": "Greenport Harbor Brewing",
+      "category": "Beer",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft beer station",
+      "public_email": "info@greenportbrew.com"
+    },
+    {
+      "company": "Prohibition Distillery",
+      "brands": "Prohibition Distillery",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; tasting",
+      "public_email": "support@dogoodspirits.com"
+    },
+    {
+      "company": "Raphael Winery",
+      "brands": "Raphael Winery",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "anthony@raphaelwine.com"
+    },
+    {
+      "company": "Sannino Vineyard",
+      "brands": "Sannino Vineyard",
+      "category": "Wine",
+      "likelihood": "Medium",
+      "best_ask": "Product; wine pour",
+      "public_email": "events@sanninovineyard.com"
+    },
+    {
+      "company": "Warwick Valley Winery",
+      "brands": "Warwick Valley Winery",
+      "category": "Cider",
+      "likelihood": "Medium",
+      "best_ask": "Product; craft cider pour",
+      "public_email": "events@docshardcider.com"
+    }
   ]
 }
