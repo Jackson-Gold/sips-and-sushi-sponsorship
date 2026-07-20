@@ -72,6 +72,18 @@ def load_discovered_emails() -> dict:
         return {}
 
 
+def load_extra_prospects() -> list[dict]:
+    """Additional prospects sourced via research (not in the spreadsheet)."""
+    path = config.DATA_DIR / "extra_prospects.json"
+    if not path.exists():
+        return []
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh).get("prospects", [])
+    except Exception:  # noqa: BLE001
+        return []
+
+
 def build() -> list[dict]:
     if not config.XLSX_PATH.exists():
         sys.exit(f"Spreadsheet not found: {config.XLSX_PATH}")
@@ -117,6 +129,27 @@ def build() -> list[dict]:
         record["email"] = email
         record["status_class"] = "has_email" if email else "route_only"
 
+        prospects.append(record)
+
+    # Append researched prospects that aren't in the spreadsheet.
+    for extra in load_extra_prospects():
+        record = {key: clean(extra.get(key, "")) for key in COLUMN_MAP.values()}
+        if not record.get("company"):
+            continue
+        base_id = slugify(record["company"])
+        if base_id in EXCLUDE_IDS or base_id in seen_ids:
+            continue
+        seen_ids.add(base_id)
+
+        email = first_email(record.get("public_email", ""))
+        record["id"] = base_id
+        record["email"] = email
+        record["status_class"] = "has_email" if email else "route_only"
+        record["email_source"] = "researched"
+        if not record.get("contact_route"):
+            record["contact_route"] = "Public contact email (researched)"
+        if not record.get("routing_notes"):
+            record["routing_notes"] = "Prospect and email sourced via research."
         prospects.append(record)
 
     return prospects
