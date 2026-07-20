@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:53:25.294172+00:00",
+  "generated_at": "2026-07-20T14:58:27.495247+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "total": 125,
-    "sent": 121,
-    "replied": 4,
+    "sent": 120,
+    "replied": 5,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 3.3
+    "reply_rate": 4.2
   },
   "sentiment": {
     "positive": 1,
-    "neutral": 3,
+    "neutral": 4,
     "negative": 0
   },
   "by_category": [
@@ -34,8 +34,8 @@
     {
       "label": "Nonalcoholic",
       "total": 17,
-      "sent": 16,
-      "replied": 1,
+      "sent": 15,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     },
@@ -236,8 +236,8 @@
     {
       "label": "High",
       "total": 90,
-      "sent": 87,
-      "replied": 3,
+      "sent": 86,
+      "replied": 4,
       "pending": 0,
       "failed": 0
     },
@@ -309,13 +309,13 @@
     {
       "date": "2026-07-20",
       "sent": 59,
-      "replies": 4
+      "replies": 5
     }
   ],
   "funnel": {
     "prospects": 125,
-    "sent": 121,
-    "replied": 4
+    "sent": 120,
+    "replied": 5
   },
   "companies": [
     {
@@ -2736,12 +2736,12 @@
       "message_id": "<178455382241.74945.10663431423145614578@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:23:44.917089+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "alanna@fabriziaspirits.com",
       "reply_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T13:31:36.333531+00:00",
       "sentiment": "positive",
-      "sentiment_score": 2
+      "sentiment_score": 5
     },
     {
       "id": "three-spirit",
@@ -2827,7 +2827,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof activation",
       "email": "lifted@littlesaints.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2836,11 +2836,11 @@
       "message_id": "<178455387331.74945.2001334201713718361@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:24:36.319094+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "lifted@littlesaints.com",
+      "reply_subject": "Re: Inviting Little Saints to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-20T14:58:27.422007+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {

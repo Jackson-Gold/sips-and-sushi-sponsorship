@@ -7,7 +7,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
-    "last_reply_at": "2026-07-20T13:53:25.213890+00:00",
+    "last_reply_at": "2026-07-20T14:58:27.421238+00:00",
     "last_from": "hello@lyres.com",
     "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
   },
@@ -15,11 +15,11 @@
     "id": "fabrizia-spirits",
     "company": "Fabrizia Spirits",
     "status": "replied",
-    "reply_count": 1,
+    "reply_count": 2,
     "sentiment": "positive",
-    "sentiment_score": 2,
+    "sentiment_score": 5,
     "first_reply_at": "2026-07-20T13:31:36.333531+00:00",
-    "last_reply_at": "2026-07-20T13:53:25.214204+00:00",
+    "last_reply_at": "2026-07-20T14:58:27.421773+00:00",
     "last_from": "alanna@fabriziaspirits.com",
     "last_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)"
   },
@@ -31,7 +31,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214230+00:00",
-    "last_reply_at": "2026-07-20T13:53:25.214232+00:00",
+    "last_reply_at": "2026-07-20T14:58:27.421814+00:00",
     "last_from": "info@caledoniaspirits.com",
     "last_subject": "unsubscribe"
   },
@@ -43,8 +43,20 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214348+00:00",
-    "last_reply_at": "2026-07-20T13:53:25.214350+00:00",
+    "last_reply_at": "2026-07-20T14:58:27.421957+00:00",
     "last_from": "info@athleticbrewing.com",
     "last_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)"
+  },
+  "little-saints": {
+    "id": "little-saints",
+    "company": "Little Saints",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-20T14:58:27.422007+00:00",
+    "last_reply_at": "2026-07-20T14:58:27.422010+00:00",
+    "last_from": "lifted@littlesaints.com",
+    "last_subject": "Re: Inviting Little Saints to Sips and Sushi (Aug 22, NYC)"
   }
 }
