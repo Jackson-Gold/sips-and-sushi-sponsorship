@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:34:30.746126+00:00",
+  "generated_at": "2026-07-20T19:30:12.643766+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -768,12 +768,12 @@
       "message_id": "<178441178366.55547.15911350486535446780@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:56:26.045531+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "gabriellealness@truebrands.com",
       "reply_subject": "Re: Inviting True Brands to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T17:40:34.237879+00:00",
       "sentiment": "positive",
-      "sentiment_score": 3
+      "sentiment_score": 5
     },
     {
       "id": "angostura",
