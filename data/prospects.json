@@ -4183,5 +4183,24 @@
     "email": "events@docshardcider.com",
     "status_class": "has_email",
     "email_source": "researched"
+  },
+  {
+    "company": "Bluecoat Gin",
+    "parent_company": "",
+    "brands": "Bluecoat American Dry Gin; Bluecoat Barrel Finished Gin",
+    "category": "Gin",
+    "likelihood": "High",
+    "contact_route": "Public collaboration email (researched)",
+    "public_email": "info@bluecoatgin.com",
+    "route_confidence": "",
+    "source_url": "https://bluecoatgin.com/unitedwecreate",
+    "phone": "",
+    "distributor_needed": "",
+    "best_ask": "Product; tasting; Philadelphia craft gin story",
+    "routing_notes": "Collaboration contact listed on Bluecoat's United We Create page: info@bluecoatgin.com. Parent: Philadelphia Distilling (info@philadelphiadistilling.com).",
+    "id": "bluecoat-gin",
+    "email": "info@bluecoatgin.com",
+    "status_class": "has_email",
+    "email_source": "researched"
   }
 ]

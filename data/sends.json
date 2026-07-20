@@ -2320,5 +2320,15 @@
     "message_id": "<178456369051.27190.9451905228435915059@gmail.com>",
     "subject": "Inviting Warwick Valley Winery to Sips and Sushi (Aug 22, NYC)",
     "timestamp": "2026-07-20T16:08:12.352241+00:00"
+  },
+  "bluecoat-gin": {
+    "id": "bluecoat-gin",
+    "company": "Bluecoat Gin",
+    "to": "info@bluecoatgin.com",
+    "status": "sent",
+    "reason": "",
+    "message_id": "<178457125820.29479.4149070123742319935@gmail.com>",
+    "subject": "Inviting Bluecoat Gin to Sips and Sushi (Aug 22, NYC)",
+    "timestamp": "2026-07-20T18:14:19.651174+00:00"
   }
 }

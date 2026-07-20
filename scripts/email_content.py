@@ -472,6 +472,12 @@ TAILORING: dict[str, dict[str, str]] = {
         "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
         "ask": "a few bottles across the range for the bartenders, plus a little distillery story for guests",
     },
+    "bluecoat-gin": {
+        "brand": "Bluecoat",
+        "hook": "I've been a fan of Bluecoat for a while - Philadelphia's flagship American dry gin - and I'd love to feature you this year. I can already picture a bartender building a crisp **Bluecoat** martini or a bright gin and tonic, clean, juniper-forward drinks that sit beautifully alongside fresh sushi.",
+        "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
+        "ask": "a few bottles of Bluecoat American Dry Gin for the bartenders to build signature serves with, plus any branded touches you'd like guests to experience",
+    },
     "kings-county-distillery": {
         "brand": "Kings County Distillery",
         "hook": "As Brooklyn's oldest operating whiskey distillery, you feel like a natural fit for a New York event, and I'd love to feature you this year. I can already picture a bartender building a rich old fashioned with your **bourbon** - a local pour our guests will be proud to sip alongside the sushi.",
