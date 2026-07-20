@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T18:57:40.720901+00:00",
+  "generated_at": "2026-07-20T02:23:10.650818+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "total": 75,
-    "sent": 66,
-    "replied": 0,
+    "sent": 65,
+    "replied": 1,
     "failed": 0,
     "pending": 9,
-    "reply_rate": 0.0
+    "reply_rate": 1.5
   },
   "sentiment": {
     "positive": 0,
-    "neutral": 0,
+    "neutral": 1,
     "negative": 0
   },
   "by_category": [
@@ -34,8 +34,8 @@
     {
       "label": "Nonalcoholic",
       "total": 11,
-      "sent": 11,
-      "replied": 0,
+      "sent": 10,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -180,8 +180,8 @@
     {
       "label": "High",
       "total": 47,
-      "sent": 46,
-      "replied": 0,
+      "sent": 45,
+      "replied": 1,
       "pending": 1,
       "failed": 0
     },
@@ -249,12 +249,17 @@
       "date": "2026-07-18",
       "sent": 66,
       "replies": 0
+    },
+    {
+      "date": "2026-07-20",
+      "sent": 0,
+      "replies": 1
     }
   ],
   "funnel": {
     "prospects": 75,
-    "sent": 66,
-    "replied": 0
+    "sent": 65,
+    "replied": 1
   },
   "companies": [
     {
@@ -1266,7 +1271,7 @@
       "likelihood": "High",
       "best_ask": "Product; zero-proof bar",
       "email": "hello@lyres.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Official contact/wholesale route",
       "phone": "Not listed",
       "source_url": "https://lyres.com/pages/contact-us",
@@ -1275,11 +1280,11 @@
       "message_id": "<178441202993.55547.7176622357328955331@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T22:00:32.843795+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "hello@lyres.com",
+      "reply_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-20T02:23:10.594376+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {

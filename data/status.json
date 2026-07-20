@@ -1,1 +1,14 @@
-{}
+{
+  "lyres": {
+    "id": "lyres",
+    "company": "Lyre's",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
+    "last_reply_at": "2026-07-20T02:23:10.594392+00:00",
+    "last_from": "hello@lyres.com",
+    "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
+  }
+}
