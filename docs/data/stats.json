@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:30:12.643766+00:00",
+  "generated_at": "2026-07-20T19:47:40.207320+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -10,8 +10,8 @@
     "website": "https://example.com/cocktail-event"
   },
   "kpis": {
-    "total": 202,
-    "sent": 190,
+    "total": 203,
+    "sent": 191,
     "replied": 12,
     "failed": 0,
     "pending": 0,
@@ -25,8 +25,8 @@
   "by_category": [
     {
       "label": "Spirits",
-      "total": 29,
-      "sent": 28,
+      "total": 30,
+      "sent": 29,
       "replied": 1,
       "pending": 0,
       "failed": 0
@@ -267,8 +267,8 @@
   "by_likelihood": [
     {
       "label": "High",
-      "total": 141,
-      "sent": 131,
+      "total": 142,
+      "sent": 132,
       "replied": 10,
       "pending": 0,
       "failed": 0
@@ -285,7 +285,7 @@
   "by_best_ask": [
     {
       "label": "product",
-      "count": 194
+      "count": 195
     },
     {
       "label": "tasting",
@@ -340,13 +340,13 @@
     },
     {
       "date": "2026-07-20",
-      "sent": 136,
+      "sent": 137,
       "replies": 12
     }
   ],
   "funnel": {
-    "prospects": 202,
-    "sent": 190,
+    "prospects": 203,
+    "sent": 191,
     "replied": 12
   },
   "companies": [
@@ -4296,7 +4296,7 @@
       "reply_count": 1,
       "reply_from": "alex@brooklynkura.com",
       "reply_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)",
-      "reply_at": "2026-07-20T18:34:30.665550+00:00",
+      "reply_at": "2026-07-20T18:51:32.000032+00:00",
       "sentiment": "positive",
       "sentiment_score": 5
     },
@@ -5393,6 +5393,31 @@
       "message_id": "<178457125820.29479.4149070123742319935@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T18:14:19.651174+00:00",
+      "reply_count": 0,
+      "reply_from": "",
+      "reply_subject": "",
+      "reply_at": "",
+      "sentiment": "",
+      "sentiment_score": 0
+    },
+    {
+      "id": "nowadays",
+      "company": "Nowadays",
+      "parent_company": "",
+      "brands": "Nowadays THC Spirit; Nowadays canned cocktails",
+      "category": "Spirits",
+      "likelihood": "High",
+      "best_ask": "Product; THC spirit tasting / signature cocktail",
+      "email": "hello@trynowadays.com",
+      "status": "sent",
+      "contact_route": "Public contact email (researched)",
+      "phone": "",
+      "source_url": "https://wc.trynowadays.com/contact/",
+      "routing_notes": "Contact email listed on official Nowadays contact page: hello@trynowadays.com.",
+      "subject": "Inviting Nowadays to Sips and Sushi (Aug 22, NYC)",
+      "message_id": "<178457681806.30816.642434415558809055@gmail.com>",
+      "send_reason": "",
+      "sent_at": "2026-07-20T19:46:59.499142+00:00",
       "reply_count": 0,
       "reply_from": "",
       "reply_subject": "",

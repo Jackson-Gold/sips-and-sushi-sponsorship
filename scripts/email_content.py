@@ -478,6 +478,12 @@ TAILORING: dict[str, dict[str, str]] = {
         "audience": "cocktail enthusiasts, bartenders, and hospitality professionals",
         "ask": "a few bottles of Bluecoat American Dry Gin for the bartenders to build signature serves with, plus any branded touches you'd like guests to experience",
     },
+    "nowadays": {
+        "brand": "Nowadays",
+        "hook": "I've been a fan of Nowadays for a while - love what you're doing with a proper spirit format that still feels social - and I'd love to feature you this year. I can already picture a bartender building a bright **Nowadays** highball or spritz as a standout option for guests who want that light, buzzy experience without drinking alcohol, a natural fit alongside fresh sushi.",
+        "audience": "younger professionals, cocktail enthusiasts, and guests who aren't drinking alcohol",
+        "ask": "a few bottles for a signature cocktail or for invitees to taste, plus any branded touches you'd like included",
+    },
     "kings-county-distillery": {
         "brand": "Kings County Distillery",
         "hook": "As Brooklyn's oldest operating whiskey distillery, you feel like a natural fit for a New York event, and I'd love to feature you this year. I can already picture a bartender building a rich old fashioned with your **bourbon** - a local pour our guests will be proud to sip alongside the sushi.",

@@ -2330,5 +2330,15 @@
     "message_id": "<178457125820.29479.4149070123742319935@gmail.com>",
     "subject": "Inviting Bluecoat Gin to Sips and Sushi (Aug 22, NYC)",
     "timestamp": "2026-07-20T18:14:19.651174+00:00"
+  },
+  "nowadays": {
+    "id": "nowadays",
+    "company": "Nowadays",
+    "to": "hello@trynowadays.com",
+    "status": "sent",
+    "reason": "",
+    "message_id": "<178457681806.30816.642434415558809055@gmail.com>",
+    "subject": "Inviting Nowadays to Sips and Sushi (Aug 22, NYC)",
+    "timestamp": "2026-07-20T19:46:59.499142+00:00"
   }
 }

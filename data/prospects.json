@@ -4202,5 +4202,24 @@
     "email": "info@bluecoatgin.com",
     "status_class": "has_email",
     "email_source": "researched"
+  },
+  {
+    "company": "Nowadays",
+    "parent_company": "",
+    "brands": "Nowadays THC Spirit; Nowadays canned cocktails",
+    "category": "Spirits",
+    "likelihood": "High",
+    "contact_route": "Public contact email (researched)",
+    "public_email": "hello@trynowadays.com",
+    "route_confidence": "",
+    "source_url": "https://wc.trynowadays.com/contact/",
+    "phone": "",
+    "distributor_needed": "",
+    "best_ask": "Product; THC spirit tasting / signature cocktail",
+    "routing_notes": "Contact email listed on official Nowadays contact page: hello@trynowadays.com.",
+    "id": "nowadays",
+    "email": "hello@trynowadays.com",
+    "status_class": "has_email",
+    "email_source": "researched"
   }
 ]
