@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:29:26.368130+00:00",
+  "generated_at": "2026-07-20T13:31:45.468374+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,14 +11,14 @@
   },
   "kpis": {
     "total": 125,
-    "sent": 124,
-    "replied": 1,
+    "sent": 123,
+    "replied": 2,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 0.8
+    "reply_rate": 1.6
   },
   "sentiment": {
-    "positive": 0,
+    "positive": 1,
     "neutral": 1,
     "negative": 0
   },
@@ -82,8 +82,8 @@
     {
       "label": "Liqueur",
       "total": 7,
-      "sent": 7,
-      "replied": 0,
+      "sent": 6,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -236,8 +236,8 @@
     {
       "label": "High",
       "total": 90,
-      "sent": 89,
-      "replied": 1,
+      "sent": 88,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     },
@@ -309,13 +309,13 @@
     {
       "date": "2026-07-20",
       "sent": 59,
-      "replies": 1
+      "replies": 2
     }
   ],
   "funnel": {
     "prospects": 125,
-    "sent": 124,
-    "replied": 1
+    "sent": 123,
+    "replied": 2
   },
   "companies": [
     {
@@ -2727,7 +2727,7 @@
       "likelihood": "High",
       "best_ask": "Product; limoncello spritz activation",
       "email": "customerservice@fabriziaspirits.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2736,12 +2736,12 @@
       "message_id": "<178455382241.74945.10663431423145614578@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:23:44.917089+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "alanna@fabriziaspirits.com",
+      "reply_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-20T13:31:36.333531+00:00",
+      "sentiment": "positive",
+      "sentiment_score": 2
     },
     {
       "id": "three-spirit",
