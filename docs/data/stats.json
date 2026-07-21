@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:47:40.207320+00:00",
+  "generated_at": "2026-07-21T02:01:32.599295+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "total": 203,
-    "sent": 191,
-    "replied": 12,
+    "sent": 188,
+    "replied": 15,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 6.3
+    "reply_rate": 8.0
   },
   "sentiment": {
-    "positive": 6,
-    "neutral": 6,
+    "positive": 8,
+    "neutral": 7,
     "negative": 0
   },
   "by_category": [
@@ -42,16 +42,16 @@
     {
       "label": "Nonalcoholic",
       "total": 22,
-      "sent": 19,
-      "replied": 3,
+      "sent": 18,
+      "replied": 4,
       "pending": 0,
       "failed": 0
     },
     {
       "label": "Wine",
       "total": 18,
-      "sent": 17,
-      "replied": 1,
+      "sent": 16,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     },
@@ -138,8 +138,8 @@
     {
       "label": "Sake",
       "total": 4,
-      "sent": 3,
-      "replied": 1,
+      "sent": 2,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 142,
-      "sent": 132,
-      "replied": 10,
+      "sent": 129,
+      "replied": 13,
       "pending": 0,
       "failed": 0
     },
@@ -342,12 +342,17 @@
       "date": "2026-07-20",
       "sent": 137,
       "replies": 12
+    },
+    {
+      "date": "2026-07-21",
+      "sent": 0,
+      "replies": 3
     }
   ],
   "funnel": {
     "prospects": 203,
-    "sent": 191,
-    "replied": 12
+    "sent": 188,
+    "replied": 15
   },
   "companies": [
     {
@@ -768,12 +773,12 @@
       "message_id": "<178441178366.55547.15911350486535446780@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:56:26.045531+00:00",
-      "reply_count": 2,
+      "reply_count": 3,
       "reply_from": "gabriellealness@truebrands.com",
       "reply_subject": "Re: Inviting True Brands to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T17:40:34.237879+00:00",
       "sentiment": "positive",
-      "sentiment_score": 5
+      "sentiment_score": 7
     },
     {
       "id": "angostura",
@@ -2243,12 +2248,12 @@
       "message_id": "<178455359724.74945.17949200731916593026@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:19:59.744110+00:00",
-      "reply_count": 1,
+      "reply_count": 5,
       "reply_from": "rortiz@stgeorgespirits.com",
-      "reply_subject": "Fwd: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)",
+      "reply_subject": "Re: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T17:55:57.816018+00:00",
       "sentiment": "positive",
-      "sentiment_score": 20
+      "sentiment_score": 40
     },
     {
       "id": "kings-county-distillery",
@@ -2909,7 +2914,7 @@
       "likelihood": "High",
       "best_ask": "Product; nonalcoholic toast moment",
       "email": "info@tostbeverages.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2918,12 +2923,12 @@
       "message_id": "<178455389600.74945.6310838909490287065@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:24:58.297864+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "dasha@tostbeverages.com",
+      "reply_subject": "TÖST Support on Aug 22nd",
+      "reply_at": "2026-07-21T02:01:32.522437+00:00",
+      "sentiment": "positive",
+      "sentiment_score": 3
     },
     {
       "id": "best-day-brewing",
@@ -3384,7 +3389,7 @@
       "likelihood": "High",
       "best_ask": "Product; local Long Island tie-in; spritz activation",
       "email": "info@wolffer.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -3393,11 +3398,11 @@
       "message_id": "<178455410692.74945.8242406691470666038@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:28:29.453608+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "info@wolffer.com",
+      "reply_subject": "Re: Inviting Wolffer Estate to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-21T02:01:32.522259+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {
@@ -4334,7 +4339,7 @@
       "likelihood": "High",
       "best_ask": "Product; sake pairing with sushi",
       "email": "info@sakeone.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -4343,12 +4348,12 @@
       "message_id": "<178456319858.27190.16823743523406195853@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T15:59:59.827711+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "jimm@sakeone.com",
+      "reply_subject": "Re: Inviting SakeOne to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-21T02:01:32.522378+00:00",
+      "sentiment": "positive",
+      "sentiment_score": 9
     },
     {
       "id": "wilderton",

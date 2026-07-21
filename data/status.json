@@ -7,7 +7,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.108894+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.519855+00:00",
     "last_from": "hello@lyres.com",
     "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
   },
@@ -19,7 +19,7 @@
     "sentiment": "positive",
     "sentiment_score": 9,
     "first_reply_at": "2026-07-20T13:31:36.333531+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109124+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520579+00:00",
     "last_from": "alanna@fabriziaspirits.com",
     "last_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)"
   },
@@ -31,7 +31,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214230+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109203+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520612+00:00",
     "last_from": "info@caledoniaspirits.com",
     "last_subject": "unsubscribe"
   },
@@ -43,7 +43,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214348+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109358+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520732+00:00",
     "last_from": "info@athleticbrewing.com",
     "last_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)"
   },
@@ -55,7 +55,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T14:58:27.422007+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109421+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520779+00:00",
     "last_from": "lifted@littlesaints.com",
     "last_subject": "Re: Inviting Little Saints to Sips and Sushi (Aug 22, NYC)"
   },
@@ -67,7 +67,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T16:08:58.019363+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109477+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520811+00:00",
     "last_from": "pjc@taconicdistillery.com",
     "last_subject": "Re: Inviting Taconic Distillery to Sips and Sushi (Aug 22, NYC)"
   },
@@ -79,7 +79,7 @@
     "sentiment": "positive",
     "sentiment_score": 9,
     "first_reply_at": "2026-07-20T16:08:58.019455+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109628+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.520904+00:00",
     "last_from": "gabriella@onewomanwines.com",
     "last_subject": "Re: Inviting One Woman Wines to Sips and Sushi (Aug 22, NYC)"
   },
@@ -91,7 +91,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T16:54:06.618413+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.109909+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.521108+00:00",
     "last_from": "membership@greenbrierdistillery.com",
     "last_subject": "Re: Inviting Nelson's Green Brier to Sips and Sushi (Aug 22, NYC)"
   },
@@ -99,11 +99,11 @@
     "id": "true-brands",
     "company": "True Brands",
     "status": "replied",
-    "reply_count": 2,
+    "reply_count": 3,
     "sentiment": "positive",
-    "sentiment_score": 5,
+    "sentiment_score": 7,
     "first_reply_at": "2026-07-20T17:40:34.237879+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.110056+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.521257+00:00",
     "last_from": "gabriellealness@truebrands.com",
     "last_subject": "Re: Inviting True Brands to Sips and Sushi (Aug 22, NYC)"
   },
@@ -115,7 +115,7 @@
     "sentiment": "positive",
     "sentiment_score": 7,
     "first_reply_at": "2026-07-20T17:40:34.238002+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.110314+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.521340+00:00",
     "last_from": "sales@drinkmonday.co",
     "last_subject": "Re: Inviting Monday Gin to Sips and Sushi (Aug 22, NYC)"
   },
@@ -123,13 +123,13 @@
     "id": "st-george-spirits",
     "company": "St. George Spirits",
     "status": "replied",
-    "reply_count": 1,
+    "reply_count": 5,
     "sentiment": "positive",
-    "sentiment_score": 20,
+    "sentiment_score": 40,
     "first_reply_at": "2026-07-20T17:55:57.816018+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.111082+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.522089+00:00",
     "last_from": "rortiz@stgeorgespirits.com",
-    "last_subject": "Fwd: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)"
+    "last_subject": "Re: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)"
   },
   "brooklyn-kura": {
     "id": "brooklyn-kura",
@@ -139,8 +139,44 @@
     "sentiment": "positive",
     "sentiment_score": 5,
     "first_reply_at": "2026-07-20T18:51:32.000032+00:00",
-    "last_reply_at": "2026-07-20T19:47:40.111189+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.522145+00:00",
     "last_from": "alex@brooklynkura.com",
     "last_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)"
+  },
+  "wolffer-estate": {
+    "id": "wolffer-estate",
+    "company": "Wolffer Estate",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "neutral",
+    "sentiment_score": 0,
+    "first_reply_at": "2026-07-21T02:01:32.522259+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.522261+00:00",
+    "last_from": "info@wolffer.com",
+    "last_subject": "Re: Inviting Wolffer Estate to Sips and Sushi (Aug 22, NYC)"
+  },
+  "sakeone": {
+    "id": "sakeone",
+    "company": "SakeOne",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "positive",
+    "sentiment_score": 9,
+    "first_reply_at": "2026-07-21T02:01:32.522378+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.522379+00:00",
+    "last_from": "jimm@sakeone.com",
+    "last_subject": "Re: Inviting SakeOne to Sips and Sushi (Aug 22, NYC)"
+  },
+  "tost": {
+    "id": "tost",
+    "company": "Tost",
+    "status": "replied",
+    "reply_count": 1,
+    "sentiment": "positive",
+    "sentiment_score": 3,
+    "first_reply_at": "2026-07-21T02:01:32.522437+00:00",
+    "last_reply_at": "2026-07-21T02:01:32.522440+00:00",
+    "last_from": "dasha@tostbeverages.com",
+    "last_subject": "TÖST Support on Aug 22nd"
   }
 }
