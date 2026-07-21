@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T15:48:37.252852+00:00",
+  "generated_at": "2026-07-21T19:09:05.330505+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,23 +11,23 @@
   },
   "kpis": {
     "total": 203,
-    "sent": 188,
-    "replied": 15,
+    "sent": 187,
+    "replied": 16,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 8.0
+    "reply_rate": 8.6
   },
   "sentiment": {
     "positive": 8,
-    "neutral": 7,
+    "neutral": 8,
     "negative": 0
   },
   "by_category": [
     {
       "label": "Spirits",
       "total": 30,
-      "sent": 29,
-      "replied": 1,
+      "sent": 28,
+      "replied": 2,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 142,
-      "sent": 129,
-      "replied": 13,
+      "sent": 128,
+      "replied": 14,
       "pending": 0,
       "failed": 0
     },
@@ -346,13 +346,13 @@
     {
       "date": "2026-07-21",
       "sent": 0,
-      "replies": 3
+      "replies": 4
     }
   ],
   "funnel": {
     "prospects": 203,
-    "sent": 188,
-    "replied": 15
+    "sent": 187,
+    "replied": 16
   },
   "companies": [
     {
@@ -2589,7 +2589,7 @@
       "likelihood": "High",
       "best_ask": "Product; tasting",
       "email": "amanda@staugustinedistillery.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2598,11 +2598,11 @@
       "message_id": "<178455374731.74945.17463014641298141105@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:22:30.307414+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "amanda@staugustinedistillery.com",
+      "reply_subject": "Re: Inviting St. Augustine Distillery to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-21T19:09:05.250523+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {
