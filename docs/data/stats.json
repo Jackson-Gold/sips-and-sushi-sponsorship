@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T13:40:24.613580+00:00",
+  "generated_at": "2026-07-23T19:04:35.201015+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "total": 203,
-    "sent": 187,
-    "replied": 16,
+    "sent": 186,
+    "replied": 17,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 8.6
+    "reply_rate": 9.1
   },
   "sentiment": {
     "positive": 8,
     "neutral": 8,
-    "negative": 0
+    "negative": 1
   },
   "by_category": [
     {
@@ -106,8 +106,8 @@
     {
       "label": "Rum",
       "total": 6,
-      "sent": 6,
-      "replied": 0,
+      "sent": 5,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 142,
-      "sent": 128,
-      "replied": 14,
+      "sent": 127,
+      "replied": 15,
       "pending": 0,
       "failed": 0
     },
@@ -347,12 +347,17 @@
       "date": "2026-07-21",
       "sent": 0,
       "replies": 4
+    },
+    {
+      "date": "2026-07-23",
+      "sent": 0,
+      "replies": 1
     }
   ],
   "funnel": {
     "prospects": 203,
-    "sent": 187,
-    "replied": 16
+    "sent": 186,
+    "replied": 17
   },
   "companies": [
     {
@@ -4298,12 +4303,12 @@
       "message_id": "<178456317992.27190.5319758068002402166@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T15:59:41.184262+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "alex@brooklynkura.com",
       "reply_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T18:51:32.000032+00:00",
       "sentiment": "positive",
-      "sentiment_score": 5
+      "sentiment_score": 6
     },
     {
       "id": "tippsy-sake",
@@ -4464,7 +4469,7 @@
       "likelihood": "High",
       "best_ask": "Product; tasting",
       "email": "info@cottonandreed.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -4473,12 +4478,12 @@
       "message_id": "<178456324829.27190.7903582521163502386@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T16:00:53.571670+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "ash@cottonandreed.com",
+      "reply_subject": "Re: Inviting Cotton & Reed to Sips and Sushi (Aug 22, NYC)",
+      "reply_at": "2026-07-23T19:04:35.123187+00:00",
+      "sentiment": "negative",
+      "sentiment_score": -4
     },
     {
       "id": "dads-hat-rye",
