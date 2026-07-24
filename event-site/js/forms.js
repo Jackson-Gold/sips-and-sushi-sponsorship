@@ -21,9 +21,11 @@
       return;
     }
 
-    // Honeypot
+    // Honeypot (checkbox: only flag when checked; .value is always "on")
     const trap = form.querySelector('[name="botcheck"]');
-    if (trap && trap.value) return;
+    if (trap && (trap.type === "checkbox" ? trap.checked : Boolean(trap.value))) {
+      return;
+    }
 
     const data = new FormData(form);
     data.set("access_key", cfg.accessKey);
