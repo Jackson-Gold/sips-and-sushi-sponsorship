@@ -16,7 +16,7 @@
 
     if (!cfg.accessKey || cfg.accessKey === "YOUR_WEB3FORMS_ACCESS_KEY") {
       feedback.textContent =
-        "Form is not configured yet. Add your Web3Forms access key to js/form-config.js.";
+        "Form is not configured yet. Set WEB3FORMS_ACCESS_KEY on Vercel (or js/form-config.js locally).";
       feedback.classList.add("is-err");
       return;
     }

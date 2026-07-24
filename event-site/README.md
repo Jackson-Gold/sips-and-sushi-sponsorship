@@ -37,9 +37,15 @@ window.SIPS_FORM_CONFIG = {
 
 `js/form-config.js` is **gitignored** and will not be pushed.
 
-3. For Vercel, add the same file in the project (or inject `accessKey` at deploy) so production can submit. Guest and sponsor forms use different subjects so you can tell them apart.
+3. **Vercel:** Project → Settings → Environment Variables → add:
 
-Until a real key is set, the UI shows a clear “not configured” message instead of failing silently.
+| Name | Value | Environments |
+|------|--------|----------------|
+| `WEB3FORMS_ACCESS_KEY` | your same Web3Forms key | Production (and Preview if you want) |
+
+Redeploy after saving. The build injects the key into `public/js/form-config.js`. No second Web3Forms account needed — delivery email is whatever you set on web3forms.com for that key.
+
+Guest and sponsor forms use different subjects so you can tell them apart. Until the key is set, the UI shows a clear “not configured” message.
 
 ## Vercel deploy
 
