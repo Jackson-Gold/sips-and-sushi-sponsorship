@@ -1,0 +1,5 @@
+{
+  "name": "sips-and-sushi-event",
+  "private": true,
+  "description": "Static event site (used when Vercel Root Directory is event-site)"
+}

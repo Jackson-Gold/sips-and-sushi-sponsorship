@@ -44,11 +44,11 @@ Until a real key is set, the UI shows a clear “not configured” message inste
 ## Vercel deploy
 
 1. Import this GitHub repo in Vercel.
-2. Set **Root Directory** to `event-site`.
-3. Framework Preset: **Other** (static).
-4. Deploy from branch **`main`**.
+2. Deploy from branch **`main`**.
+3. Framework Preset: **Other** (or leave default).
+4. Root Directory can stay **empty / repo root** — `npm run build` copies this folder into `public/` for Vercel.
 
-No build command required.
+Optional: set Root Directory to `event-site` instead (also supported).
 
 The sponsorship outreach dashboard (GitHub Pages) lives on the `outreach-dashboard` branch separately.
 

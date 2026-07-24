@@ -1,7 +1,8 @@
 {
   "framework": null,
-  "buildCommand": "",
-  "outputDirectory": ".",
+  "installCommand": "npm install --ignore-scripts",
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
   "cleanUrls": true,
   "headers": [
     {

@@ -1,0 +1,8 @@
+{
+  "name": "sips-and-sushi-sponsorship",
+  "private": true,
+  "description": "Vercel builds the event site from event-site/ into public/",
+  "scripts": {
+    "build": "rm -rf public && mkdir -p public && cp -R event-site/. public/ && rm -f public/README.md public/vercel.json public/.gitignore"
+  }
+}
