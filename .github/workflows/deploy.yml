@@ -2,7 +2,7 @@ name: Deploy dashboard to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [outreach-dashboard]
     paths:
       - "docs/**"
       - ".github/workflows/deploy.yml"
