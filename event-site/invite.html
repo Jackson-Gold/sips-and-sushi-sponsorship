@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Invite — Sips and Sushi</title>
+  <meta name="description" content="Solve the puzzle to request an invite to Sips and Sushi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="site-nav is-solid" aria-label="Primary">
+    <a class="nav-brand" href="index.html">Sips <span class="amp">&amp;</span> Sushi</a>
+    <ul class="nav-links">
+      <li><a href="evening.html">Evening</a></li>
+      <li><a href="invite.html" aria-current="page">Invite</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div class="section-inner">
+      <p class="section-kicker" style="color: var(--gold);">Guest list</p>
+      <h1>Request an invite</h1>
+      <p>Slide the tiles into place. When the picture comes together, you can ask to join the evening.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-inner puzzle-layout">
+      <div class="puzzle-board-wrap" data-reveal>
+        <div
+          class="puzzle-board"
+          data-puzzle
+          data-image="assets/images/puzzle.jpg"
+          data-unlock="#invite-gate"
+        ></div>
+        <p class="puzzle-hint muted">Click a tile beside the empty space to slide it. Arrow keys work when the board is focused.</p>
+        <p class="puzzle-status" id="puzzle-status" aria-live="polite">Arrange the image to unlock your request.</p>
+        <p class="sr-only" id="puzzle-live" aria-live="assertive"></p>
+      </div>
+
+      <div id="invite-gate" class="gate-panel gate-locked" data-reveal>
+        <p class="lock-message">
+          The request form stays closed until the puzzle is solved — a small gate for an invite-only night.
+        </p>
+
+        <div class="unlock-cta">
+          <button type="button" class="btn btn-primary" id="request-invite-btn" disabled aria-disabled="true"
+            onclick="document.getElementById('invite-form').scrollIntoView({ behavior: 'smooth', block: 'start' })">
+            Request invite
+          </button>
+        </div>
+
+        <div class="form-panel" id="invite-form">
+          <h3>Tell us a little</h3>
+          <form data-sips-form>
+            <input type="hidden" name="subject" value="Sips and Sushi — Guest invite request" />
+            <input type="hidden" name="from_name" value="Sips and Sushi Invite" />
+            <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" />
+
+            <div class="form-stack">
+              <div class="form-field">
+                <label for="guest-name">Name</label>
+                <input id="guest-name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="form-field">
+                <label for="guest-email">Email</label>
+                <input id="guest-email" name="email" type="email" required autocomplete="email" />
+              </div>
+              <div class="form-field">
+                <label for="guest-know">How do you know the host?</label>
+                <input id="guest-know" name="How they know the host" type="text" required />
+              </div>
+              <div class="form-field">
+                <label for="guest-note">Note <span class="muted">(optional)</span></label>
+                <textarea id="guest-note" name="message" placeholder="Anything we should know…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send request</button>
+            </div>
+            <p class="form-feedback" role="status"></p>
+            <p class="form-note muted">We’ll review requests by hand. Solving the puzzle doesn’t guarantee a spot.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <div>
+        <strong>Sips <span class="amp">&amp;</span> Sushi</strong><br />
+        August 22, 2026 · Garden rooftop, NYC
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="js/form-config.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/puzzle.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

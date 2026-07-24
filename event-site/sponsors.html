@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sponsor &amp; Outreach — Sips and Sushi</title>
+  <meta name="description" content="Request a partnership or product placement at Sips and Sushi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-sponsors">
+  <nav class="site-nav is-solid" aria-label="Primary">
+    <a class="nav-brand" href="index.html">Sips <span class="amp">&amp;</span> Sushi</a>
+    <ul class="nav-links">
+      <li><a href="evening.html">Evening</a></li>
+      <li><a href="invite.html">Invite</a></li>
+      <li><a href="sponsors.html" aria-current="page">Sponsors</a></li>
+    </ul>
+  </nav>
+
+  <main class="sponsor-split">
+    <aside class="sponsor-aside" data-reveal>
+      <p class="section-kicker">Partnership</p>
+      <h1 class="sponsor-title">
+        Bring something<br />
+        worth tasting
+      </h1>
+      <p class="sponsor-lede">
+        Free to take part — product and presence, not a fee.
+        Showcase however you think is best.
+      </p>
+      <ul class="sponsor-list">
+        <li>Spirits <span class="amp">&amp;</span> wine</li>
+        <li>Mixers <span class="amp">&amp;</span> syrups</li>
+        <li>Glassware <span class="amp">&amp;</span> bar tools</li>
+      </ul>
+      <p class="sponsor-meta">August 22 · Garden rooftop · NYC</p>
+    </aside>
+
+    <section class="sponsor-main" data-reveal>
+      <form class="line-form" data-sips-form id="sponsor-form">
+        <input type="hidden" name="subject" value="Sips and Sushi — Sponsor / outreach request" />
+        <input type="hidden" name="from_name" value="Sips and Sushi Sponsors" />
+        <input type="checkbox" name="botcheck" class="honeypot" tabindex="-1" autocomplete="off" />
+
+        <p class="line-form-kicker">Partnership request</p>
+
+        <div class="line-row">
+          <label for="sp-name">Name</label>
+          <input id="sp-name" name="name" type="text" required autocomplete="name" placeholder=" " />
+        </div>
+        <div class="line-row">
+          <label for="sp-company">Company / brand</label>
+          <input id="sp-company" name="Company" type="text" required placeholder=" " />
+        </div>
+        <div class="line-row">
+          <label for="sp-email">Email</label>
+          <input id="sp-email" name="email" type="email" required autocomplete="email" placeholder=" " />
+        </div>
+        <div class="line-row">
+          <label for="sp-product">What you’d like to offer</label>
+          <input id="sp-product" name="Product / ask" type="text" required placeholder="Gin for a signature cocktail, glassware…" />
+        </div>
+        <div class="line-row line-row-area">
+          <label for="sp-message">Message</label>
+          <textarea id="sp-message" name="message" required placeholder="Quantities, timing, how you’d like to be showcased…"></textarea>
+        </div>
+
+        <div class="line-form-actions">
+          <button type="submit" class="btn btn-primary">Send request</button>
+          <p class="form-note muted">No sponsorship fee — only what you’re comfortable providing.</p>
+        </div>
+        <p class="form-feedback" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner">
+      <div>
+        <strong>Sips <span class="amp">&amp;</span> Sushi</strong><br />
+        August 22, 2026 · Garden rooftop, NYC
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="js/form-config.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>
