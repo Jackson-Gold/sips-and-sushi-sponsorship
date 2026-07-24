@@ -27,7 +27,10 @@ jobs:
   send:
     runs-on: ubuntu-latest
     steps:
+      # Outreach data/dashboard live on outreach-dashboard.
       - uses: actions/checkout@v4
+        with:
+          ref: outreach-dashboard
 
       - uses: actions/setup-python@v5
         with:
@@ -88,7 +91,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: record outreach sends"
-            git push
+            git push origin HEAD:outreach-dashboard
           fi
 
       - name: Upload previews (dry run)

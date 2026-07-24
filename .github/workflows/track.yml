@@ -16,7 +16,10 @@ jobs:
   track:
     runs-on: ubuntu-latest
     steps:
+      # Dashboard data/site live on outreach-dashboard (GitHub Pages).
       - uses: actions/checkout@v4
+        with:
+          ref: outreach-dashboard
 
       - uses: actions/setup-python@v5
         with:
@@ -54,5 +57,5 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "chore: refresh reply stats"
-            git push
+            git push origin HEAD:outreach-dashboard
           fi

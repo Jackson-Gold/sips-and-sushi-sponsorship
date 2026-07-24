@@ -46,9 +46,11 @@ Until a real key is set, the UI shows a clear “not configured” message inste
 1. Import this GitHub repo in Vercel.
 2. Set **Root Directory** to `event-site`.
 3. Framework Preset: **Other** (static).
-4. Deploy from branch `feat/event-site` (or `main` after merge).
+4. Deploy from branch **`main`**.
 
 No build command required.
+
+The sponsorship outreach dashboard (GitHub Pages) lives on the `outreach-dashboard` branch separately.
 
 ## Stack
 
