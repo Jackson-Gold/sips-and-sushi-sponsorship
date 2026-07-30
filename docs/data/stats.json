@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T13:43:31.154971+00:00",
+  "generated_at": "2026-07-30T19:15:52.232038+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -913,12 +913,12 @@
       "message_id": "<178441182667.55547.6117762872189897599@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-18T21:57:09.207651+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "Benjamin@scrappysbitters.com",
-      "reply_subject": "Sips & Sushi & Scrappy's",
+      "reply_subject": "Re: Sips & Sushi & Scrappy's",
       "reply_at": "2026-07-29T19:04:41.201466+00:00",
       "sentiment": "positive",
-      "sentiment_score": 5
+      "sentiment_score": 7
     },
     {
       "id": "the-bitter-truth",
