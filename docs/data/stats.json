@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T13:48:44.179736+00:00",
+  "generated_at": "2026-07-31T19:16:57.129311+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -2263,12 +2263,12 @@
       "message_id": "<178455359724.74945.17949200731916593026@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:19:59.744110+00:00",
-      "reply_count": 10,
+      "reply_count": 11,
       "reply_from": "rortiz@stgeorgespirits.com",
-      "reply_subject": "RE: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)",
+      "reply_subject": "Re: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T17:55:57.816018+00:00",
       "sentiment": "positive",
-      "sentiment_score": 95
+      "sentiment_score": 126
     },
     {
       "id": "kings-county-distillery",
