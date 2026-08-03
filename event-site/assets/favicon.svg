@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sips and Sushi">
+  <rect width="64" height="64" rx="14" fill="#0f1f16"/>
+  <text
+    x="32"
+    y="42"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="26"
+    font-weight="500"
+    letter-spacing="-0.04em"
+    fill="#f3efe6"
+  >S<tspan fill="#e0c988" dx="0.02em" font-style="italic" font-size="28">&amp;</tspan><tspan dx="0.02em">S</tspan></text>
+</svg>
