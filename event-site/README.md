@@ -9,7 +9,8 @@ Chic, garden-themed static site for the August 22 NYC event. Deploy to **Vercel*
 | `index.html` | Landing — brand hero, Request invite CTA |
 | `evening.html` | The evening — rooftop, cocktails, sushi |
 | `invite.html` | Sliding puzzle → guest invite form |
-| `sponsors.html` | Sponsor / outreach form (no puzzle) |
+| `sponsors.html` | Current partners roster |
+| `partner.html` | Partnership request form |
 
 ## Local preview
 

@@ -849,6 +849,223 @@ html.js-motion .canvas-hero .section-kicker {
   color: var(--sage);
 }
 
+.page-sponsors-roster {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% 0%, rgba(196, 163, 90, 0.12), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 95% 70%, rgba(143, 168, 138, 0.1), transparent 50%),
+    var(--leaf-deep);
+  color: var(--stone);
+}
+
+.roster-page {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + clamp(2.25rem, 5vw, 3.5rem)) var(--space) clamp(3rem, 6vw, 4.5rem);
+}
+
+.roster-intro {
+  max-width: 34rem;
+  margin-bottom: clamp(2.5rem, 6vw, 3.75rem);
+}
+
+.roster-intro .section-kicker {
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+
+.partner-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.5vw, 3.5rem);
+  font-weight: 450;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  color: var(--stone-warm);
+}
+
+.roster-lede {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--sage-soft);
+  max-width: 28rem;
+}
+
+.partner-spotlight {
+  position: relative;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  padding: clamp(2rem, 4vw, 2.75rem) 0;
+  border-top: 1px solid rgba(196, 163, 90, 0.28);
+  border-bottom: 1px solid rgba(196, 163, 90, 0.28);
+}
+
+@media (min-width: 800px) {
+  .partner-spotlight {
+    grid-template-columns: minmax(200px, 0.9fr) minmax(0, 1.35fr);
+    gap: clamp(2.5rem, 6vw, 4.5rem);
+    align-items: start;
+    padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+  }
+}
+
+.partner-spotlight-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .partner-spotlight-brand {
+    position: sticky;
+    top: calc(var(--nav-h) + 1.5rem);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .partner-spotlight-brand::after {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    right: calc(-0.5 * clamp(2.5rem, 6vw, 4.5rem));
+    width: 1px;
+    height: calc(100% - 0.35rem);
+    background: linear-gradient(
+      180deg,
+      rgba(196, 163, 90, 0.55),
+      rgba(196, 163, 90, 0.08)
+    );
+  }
+}
+
+.partner-logo {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  filter: drop-shadow(0 0 28px rgba(196, 163, 90, 0.14));
+}
+
+.partner-meta {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 500;
+}
+
+.partner-spotlight-body {
+  max-width: 36rem;
+}
+
+.partner-name-display {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.8vw, 2.6rem);
+  font-weight: 450;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin: 0 0 1.15rem;
+  color: var(--stone-warm);
+}
+
+.partner-story {
+  margin: 0 0 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--sage-soft);
+}
+
+.partner-story:last-of-type {
+  margin-bottom: 1.75rem;
+}
+
+.partner-story .amp {
+  color: var(--gold);
+}
+
+.partner-presence {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(197, 212, 192, 0.18);
+}
+
+.partner-presence li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(197, 212, 192, 0.18);
+}
+
+.partner-presence-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.partner-presence-text {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--stone-warm);
+  letter-spacing: -0.01em;
+}
+
+.partner-cta {
+  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem 2rem;
+}
+
+.partner-cta-copy {
+  max-width: 22rem;
+}
+
+.partner-cta-lede {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--stone-warm);
+  letter-spacing: -0.015em;
+}
+
+.partner-cta-sub {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--sage);
+  line-height: 1.45;
+}
+
+.sponsor-aside-link {
+  margin: 1.75rem 0 0;
+  font-size: 0.9rem;
+}
+
+.sponsor-aside-link a {
+  color: var(--gold-soft);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(224, 201, 136, 0.35);
+}
+
+.sponsor-aside-link a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
 .sponsor-main {
   padding: clamp(2.5rem, 6vw, 4.5rem) var(--space);
   background:
