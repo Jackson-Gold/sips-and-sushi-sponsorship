@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T08:28:05.003954+00:00",
+  "generated_at": "2026-08-04T13:55:47.642101+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -2738,12 +2738,12 @@
       "message_id": "<178455380072.74945.9389398813304737670@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:23:24.508316+00:00",
-      "reply_count": 4,
+      "reply_count": 5,
       "reply_from": "carolyn.gil@tequilatromba.com",
       "reply_subject": "Re: Sips & Sushi",
       "reply_at": "2026-07-29T01:59:14.175640+00:00",
       "sentiment": "positive",
-      "sentiment_score": 12
+      "sentiment_score": 14
     },
     {
       "id": "you-yours-distilling",
