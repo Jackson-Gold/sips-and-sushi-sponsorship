@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T13:51:48.233080+00:00",
+  "generated_at": "2026-08-05T19:22:06.734978+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -2788,12 +2788,12 @@
       "message_id": "<178455382241.74945.10663431423145614578@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:23:44.917089+00:00",
-      "reply_count": 5,
+      "reply_count": 8,
       "reply_from": "alanna@fabriziaspirits.com",
       "reply_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T13:31:36.333531+00:00",
       "sentiment": "positive",
-      "sentiment_score": 9
+      "sentiment_score": 11
     },
     {
       "id": "three-spirit",
@@ -4313,12 +4313,12 @@
       "message_id": "<178456317992.27190.5319758068002402166@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T15:59:41.184262+00:00",
-      "reply_count": 4,
-      "reply_from": "alex@brooklynkura.com",
+      "reply_count": 8,
+      "reply_from": "mariabeatrizfreiresilva@gmail.com",
       "reply_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)",
       "reply_at": "2026-07-20T18:51:32.000032+00:00",
       "sentiment": "positive",
-      "sentiment_score": 12
+      "sentiment_score": 15
     },
     {
       "id": "tippsy-sake",
