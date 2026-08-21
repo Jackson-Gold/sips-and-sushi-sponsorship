@@ -7,7 +7,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T02:23:10.594376+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.349652+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.092826+00:00",
     "last_from": "hello@lyres.com",
     "last_subject": "Inviting Lyre's to Sips and Sushi (Aug 22, NYC)"
   },
@@ -19,7 +19,7 @@
     "sentiment": "positive",
     "sentiment_score": 14,
     "first_reply_at": "2026-07-20T13:31:36.333531+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350113+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093488+00:00",
     "last_from": "alanna@fabriziaspirits.com",
     "last_subject": "Re: Inviting Fabrizia Spirits to Sips and Sushi (Aug 22, NYC)"
   },
@@ -31,7 +31,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214230+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350136+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093522+00:00",
     "last_from": "info@caledoniaspirits.com",
     "last_subject": "unsubscribe"
   },
@@ -43,7 +43,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T13:53:25.214348+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350222+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093679+00:00",
     "last_from": "info@athleticbrewing.com",
     "last_subject": "Inviting Athletic Brewing to Sips and Sushi (Aug 22, NYC)"
   },
@@ -55,7 +55,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T14:58:27.422007+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350257+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093729+00:00",
     "last_from": "lifted@littlesaints.com",
     "last_subject": "Re: Inviting Little Saints to Sips and Sushi (Aug 22, NYC)"
   },
@@ -67,7 +67,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-20T16:08:58.019363+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350281+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093761+00:00",
     "last_from": "pjc@taconicdistillery.com",
     "last_subject": "Re: Inviting Taconic Distillery to Sips and Sushi (Aug 22, NYC)"
   },
@@ -79,7 +79,7 @@
     "sentiment": "positive",
     "sentiment_score": 9,
     "first_reply_at": "2026-07-20T16:08:58.019455+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350350+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.093854+00:00",
     "last_from": "gabriella@onewomanwines.com",
     "last_subject": "Re: Inviting One Woman Wines to Sips and Sushi (Aug 22, NYC)"
   },
@@ -91,7 +91,7 @@
     "sentiment": "positive",
     "sentiment_score": 3,
     "first_reply_at": "2026-07-20T16:54:06.618413+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350578+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.094184+00:00",
     "last_from": "membership@greenbrierdistillery.com",
     "last_subject": "Re: Inviting Nelson's Green Brier to Sips and Sushi (Aug 22, NYC)"
   },
@@ -103,7 +103,7 @@
     "sentiment": "positive",
     "sentiment_score": 7,
     "first_reply_at": "2026-07-20T17:40:34.237879+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350768+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.094399+00:00",
     "last_from": "gabriellealness@truebrands.com",
     "last_subject": "Re: Inviting True Brands to Sips and Sushi (Aug 22, NYC)"
   },
@@ -115,7 +115,7 @@
     "sentiment": "positive",
     "sentiment_score": 7,
     "first_reply_at": "2026-07-20T17:40:34.238002+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.350841+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.094483+00:00",
     "last_from": "sales@drinkmonday.co",
     "last_subject": "Re: Inviting Monday Gin to Sips and Sushi (Aug 22, NYC)"
   },
@@ -127,7 +127,7 @@
     "sentiment": "positive",
     "sentiment_score": 292,
     "first_reply_at": "2026-07-20T17:55:57.816018+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.353885+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.098611+00:00",
     "last_from": "rortiz@stgeorgespirits.com",
     "last_subject": "Re: Inviting St. George Spirits to Sips and Sushi (Aug 22, NYC)"
   },
@@ -135,11 +135,11 @@
     "id": "brooklyn-kura",
     "company": "Brooklyn Kura",
     "status": "replied",
-    "reply_count": 11,
+    "reply_count": 12,
     "sentiment": "positive",
     "sentiment_score": 15,
     "first_reply_at": "2026-07-20T18:51:32.000032+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354128+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.098940+00:00",
     "last_from": "alex@brooklynkura.com",
     "last_subject": "Re: Inviting Brooklyn Kura to Sips and Sushi (Aug 22, NYC)"
   },
@@ -151,7 +151,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-21T02:01:32.522259+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354213+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099041+00:00",
     "last_from": "info@wolffer.com",
     "last_subject": "Re: Inviting Wolffer Estate to Sips and Sushi (Aug 22, NYC)"
   },
@@ -163,7 +163,7 @@
     "sentiment": "positive",
     "sentiment_score": 9,
     "first_reply_at": "2026-07-21T02:01:32.522378+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354301+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099147+00:00",
     "last_from": "jimm@sakeone.com",
     "last_subject": "Re: Inviting SakeOne to Sips and Sushi (Aug 22, NYC)"
   },
@@ -175,7 +175,7 @@
     "sentiment": "positive",
     "sentiment_score": 8,
     "first_reply_at": "2026-07-21T02:01:32.522437+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354361+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099219+00:00",
     "last_from": "dasha@tostbeverages.com",
     "last_subject": "Re: TÖST Support on Aug 22nd"
   },
@@ -187,7 +187,7 @@
     "sentiment": "neutral",
     "sentiment_score": 0,
     "first_reply_at": "2026-07-21T19:09:05.250523+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354410+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099275+00:00",
     "last_from": "amanda@staugustinedistillery.com",
     "last_subject": "Re: Inviting St. Augustine Distillery to Sips and Sushi (Aug 22, NYC)"
   },
@@ -199,7 +199,7 @@
     "sentiment": "negative",
     "sentiment_score": -4,
     "first_reply_at": "2026-07-23T19:04:35.123187+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354462+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099336+00:00",
     "last_from": "ash@cottonandreed.com",
     "last_subject": "Re: Inviting Cotton & Reed to Sips and Sushi (Aug 22, NYC)"
   },
@@ -211,7 +211,7 @@
     "sentiment": "positive",
     "sentiment_score": 10,
     "first_reply_at": "2026-07-28T19:14:38.804144+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354516+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099401+00:00",
     "last_from": "info@madremezcal.com",
     "last_subject": "Re: Inviting Madre Mezcal to Sips and Sushi (Aug 22, NYC)"
   },
@@ -223,7 +223,7 @@
     "sentiment": "positive",
     "sentiment_score": 14,
     "first_reply_at": "2026-07-29T01:59:14.175640+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354611+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099514+00:00",
     "last_from": "carolyn.gil@tequilatromba.com",
     "last_subject": "Re: Sips & Sushi"
   },
@@ -235,7 +235,7 @@
     "sentiment": "positive",
     "sentiment_score": 7,
     "first_reply_at": "2026-07-29T19:04:41.201466+00:00",
-    "last_reply_at": "2026-08-20T18:34:25.354684+00:00",
+    "last_reply_at": "2026-08-21T00:57:07.099613+00:00",
     "last_from": "Benjamin@scrappysbitters.com",
     "last_subject": "Re: Sips & Sushi & Scrappy's"
   }
