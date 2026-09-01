@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T15:57:41.262122+00:00",
+  "generated_at": "2026-09-01T20:26:16.459851+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,16 +11,16 @@
   },
   "kpis": {
     "total": 203,
-    "sent": 183,
-    "replied": 20,
+    "sent": 182,
+    "replied": 21,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 10.9
+    "reply_rate": 11.5
   },
   "sentiment": {
     "positive": 12,
     "neutral": 7,
-    "negative": 1
+    "negative": 2
   },
   "by_category": [
     {
@@ -226,8 +226,8 @@
     {
       "label": "Aperitivo",
       "total": 1,
-      "sent": 1,
-      "replied": 0,
+      "sent": 0,
+      "replied": 1,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 142,
-      "sent": 124,
-      "replied": 18,
+      "sent": 123,
+      "replied": 19,
       "pending": 0,
       "failed": 0
     },
@@ -362,12 +362,17 @@
       "date": "2026-07-29",
       "sent": 0,
       "replies": 2
+    },
+    {
+      "date": "2026-09-01",
+      "sent": 0,
+      "replies": 1
     }
   ],
   "funnel": {
     "prospects": 203,
-    "sent": 183,
-    "replied": 20
+    "sent": 182,
+    "replied": 21
   },
   "companies": [
     {
@@ -2329,7 +2334,7 @@
       "likelihood": "High",
       "best_ask": "Product; aperitivo activation",
       "email": "orders@stagrestis.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2338,12 +2343,12 @@
       "message_id": "<178455362829.74945.15016767141698086804@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:20:30.668968+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
-      "sentiment_score": 0
+      "reply_count": 1,
+      "reply_from": "orders@stagrestis.com",
+      "reply_subject": "Close Out Summer With 15% Off Orders",
+      "reply_at": "2026-09-01T20:26:16.388617+00:00",
+      "sentiment": "negative",
+      "sentiment_score": -7
     },
     {
       "id": "forthave-spirits",
