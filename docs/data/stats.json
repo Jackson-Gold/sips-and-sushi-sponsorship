@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T10:24:49.720708+00:00",
+  "generated_at": "2026-09-10T15:44:30.084440+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -11,15 +11,15 @@
   },
   "kpis": {
     "total": 203,
-    "sent": 182,
-    "replied": 21,
+    "sent": 181,
+    "replied": 22,
     "failed": 0,
     "pending": 0,
-    "reply_rate": 11.5
+    "reply_rate": 12.2
   },
   "sentiment": {
     "positive": 12,
-    "neutral": 7,
+    "neutral": 8,
     "negative": 2
   },
   "by_category": [
@@ -34,8 +34,8 @@
     {
       "label": "Whiskey",
       "total": 22,
-      "sent": 20,
-      "replied": 2,
+      "sent": 19,
+      "replied": 3,
       "pending": 0,
       "failed": 0
     },
@@ -268,8 +268,8 @@
     {
       "label": "High",
       "total": 142,
-      "sent": 123,
-      "replied": 19,
+      "sent": 122,
+      "replied": 20,
       "pending": 0,
       "failed": 0
     },
@@ -367,12 +367,17 @@
       "date": "2026-09-01",
       "sent": 0,
       "replies": 1
+    },
+    {
+      "date": "2026-09-10",
+      "sent": 0,
+      "replies": 1
     }
   ],
   "funnel": {
     "prospects": 203,
-    "sent": 182,
-    "replied": 21
+    "sent": 181,
+    "replied": 22
   },
   "companies": [
     {
@@ -2284,7 +2289,7 @@
       "likelihood": "High",
       "best_ask": "Product; local Brooklyn tie-in; tasting",
       "email": "onlineorders@kingscountydistillery.com",
-      "status": "sent",
+      "status": "replied",
       "contact_route": "Public contact email (researched)",
       "phone": "",
       "source_url": "",
@@ -2293,11 +2298,11 @@
       "message_id": "<178455360775.74945.1997883186132634920@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:20:10.403881+00:00",
-      "reply_count": 0,
-      "reply_from": "",
-      "reply_subject": "",
-      "reply_at": "",
-      "sentiment": "",
+      "reply_count": 1,
+      "reply_from": "onlineorders@kingscountydistillery.com",
+      "reply_subject": "unsubscribe",
+      "reply_at": "2026-09-10T15:44:30.000077+00:00",
+      "sentiment": "neutral",
       "sentiment_score": 0
     },
     {
