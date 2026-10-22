@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T21:09:00.189622+00:00",
+  "generated_at": "2026-10-22T11:03:28.605211+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -2348,12 +2348,12 @@
       "message_id": "<178455362829.74945.15016767141698086804@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:20:30.668968+00:00",
-      "reply_count": 1,
+      "reply_count": 2,
       "reply_from": "orders@stagrestis.com",
-      "reply_subject": "Close Out Summer With 15% Off Orders",
+      "reply_subject": "Save 15% on Phony Negroni This Halloween 🎃",
       "reply_at": "2026-09-01T20:26:16.388617+00:00",
       "sentiment": "negative",
-      "sentiment_score": -7
+      "sentiment_score": -14
     },
     {
       "id": "forthave-spirits",
