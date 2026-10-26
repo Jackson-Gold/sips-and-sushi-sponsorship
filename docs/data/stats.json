@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T12:10:54.097305+00:00",
+  "generated_at": "2026-10-26T22:20:15.225156+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -1598,12 +1598,12 @@
       "message_id": "<178455354365.74945.8821301539796035247@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:19:06.795579+00:00",
-      "reply_count": 9,
+      "reply_count": 10,
       "reply_from": "info@athleticbrewing.com",
-      "reply_subject": "How's your fridge game? 🏈",
+      "reply_subject": "Confiscate the candy. Call it parenting. 🎃",
       "reply_at": "2026-07-20T13:53:25.214348+00:00",
       "sentiment": "negative",
-      "sentiment_score": -56
+      "sentiment_score": -61
     },
     {
       "id": "boston-beer-company",
