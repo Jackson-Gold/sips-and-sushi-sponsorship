@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T12:10:26.062416+00:00",
+  "generated_at": "2026-10-29T22:20:45.696299+00:00",
   "event": {
     "name": "Sips and Sushi",
     "date": "August 22, 2026",
@@ -1598,12 +1598,12 @@
       "message_id": "<178455354365.74945.8821301539796035247@gmail.com>",
       "send_reason": "",
       "sent_at": "2026-07-20T13:19:06.795579+00:00",
-      "reply_count": 11,
+      "reply_count": 12,
       "reply_from": "info@athleticbrewing.com",
-      "reply_subject": "Hop-portunity knocked. We answered.",
+      "reply_subject": "Your next move is a good one 🧑🏽‍🦽🏃🏼",
       "reply_at": "2026-07-20T13:53:25.214348+00:00",
       "sentiment": "negative",
-      "sentiment_score": -68
+      "sentiment_score": -75
     },
     {
       "id": "boston-beer-company",
